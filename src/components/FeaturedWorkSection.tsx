@@ -19,6 +19,19 @@ interface ProjectItem {
 
 const projects: ProjectItem[] = [
   {
+    id: "eascca",
+    title: "EASCCA Grand Convention & Event Sanctuary",
+    client: "EASCCA Convention Centre",
+    tags: ["Azure Computer Vision", "Multi-Role Dashboards", "A+ Performance"],
+    description:
+      "Enterprise wedding sanctuary and convention platform featuring Azure Computer Vision for Pinterest/Instagram decor recommendation, NLP sentiment analysis, 4 specialized dashboards (Admin, Manager, Decorator, Videographer), and DSA booking queues with A+ verified security and speed.",
+    badge: "AI & Event OS",
+    footerStatus: "Live Enterprise Platform · A+ Audited",
+    url: "https://eascca.lk",
+    previewImage: "/EASCCA.png",
+    category: "hospitality",
+  },
+  {
     id: "airi-galle",
     title: "Airi Banquet Hall & Events",
     client: "Airi Banquet Hall, Galle",

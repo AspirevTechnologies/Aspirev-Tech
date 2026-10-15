@@ -20,8 +20,16 @@ interface HeroSectionProps {
 }
 
 export default function HeroSection({ onOpenInquiry }: HeroSectionProps) {
-  // Live Studio Deliverables data modeled in the Solvance transaction card style
   const liveDeliverables = [
+    {
+      id: "eascca",
+      name: "EASCCA Convention & Wedding OS",
+      sub: "Azure Computer Vision & Multi-Role Dashboards",
+      badge: "A+ Verified",
+      badgeLabel: "Security & Speed",
+      icon: <Sparkles className="w-4 h-4 text-[#1A3E38]" />,
+      url: "https://eascca.lk",
+    },
     {
       id: "airi",
       name: "Airi Banquet Hall & Events",

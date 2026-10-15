@@ -21,6 +21,23 @@ interface ProjectItem {
 
 const projects: ProjectItem[] = [
   {
+    id: "eascca",
+    categoryKeys: ["all", "hospitality", "client", "saas"],
+    mockupBadge: "AI VISION & EVENT OS",
+    mockupHeader: "EASCCA Convention & Wedding Sanctuary // v3.2",
+    url: "https://eascca.lk",
+    previewImage: "/EASCCA.png",
+    client: "EASCCA Convention Centre",
+    tags: ["Client Enterprise", "Azure Computer Vision", "Sentiment Analysis", "A+ Performance"],
+    title: "EASCCA Grand Convention Centre & Wedding OS",
+    description:
+      "Enterprise wedding sanctuary and convention management suite. Integrates Azure Computer Vision to analyze Instagram and Pinterest inspiration photos and automatically match the closest decor, stage themes, and hall setups from the database. Powered by NLP sentiment analysis on inquiries, 4 dedicated role-based dashboards (Admin, Manager, Decorator, Videographer), and DSA priority queue booking architecture that eliminates race conditions and double-bookings. Rigorously verified with A+ performance and enterprise security ratings.",
+    deliverablesText:
+      "Azure Vision Inspiration Matcher, 4 Dedicated Role Dashboards (Admin/Manager/Decorator/Videographer), DSA Concurrency Queue Engine, NLP Sentiment Intelligence Suite",
+    techStack: ["Next.js", "Node.js", "MongoDB", "Azure Computer Vision", "Sentiment NLP", "DSA Queues"],
+    actionText: "View Live Architecture",
+  },
+  {
     id: "airi-galle",
     categoryKeys: ["all", "hospitality", "client"],
     mockupBadge: "LUXURY HOSPITALITY",

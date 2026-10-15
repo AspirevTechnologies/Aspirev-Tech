@@ -51,12 +51,11 @@ export default function HeroSection({ onOpenInquiry }: HeroSectionProps) {
     },
   ];
 
-  // Curated, perfectly centered face-cropped portraits of the senior guild
   const floatingAvatars = [
     {
-      name: "Mohamed Nazik",
-      role: "Founder & Lead Architect",
-      image: "/founder.jpg",
+      name: "Julian Rivera",
+      role: "Lead Systems Architect",
+      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&crop=faces&w=256&h=256&q=85",
       posClass: "-left-16 xl:-left-24 top-6",
       animClass: "animate-bounce-slow",
     },

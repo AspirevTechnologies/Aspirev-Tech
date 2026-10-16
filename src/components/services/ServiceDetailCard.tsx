@@ -183,7 +183,7 @@ export default function ServiceDetailCard({
                   <span className="w-2.5 h-2.5 rounded-full bg-amber-400" />
                   <span className="w-2.5 h-2.5 rounded-full bg-emerald-400" />
                   <span className="ml-2 font-mono text-[0.625rem] text-[#D2EAE3] truncate max-w-[170px]">
-                    preview.internal/valetxpress
+                    valetxpro.vercel.app
                   </span>
                 </div>
                 <span className="text-[0.625rem] font-mono font-semibold px-2.5 py-0.5 rounded-full bg-[#1A3E38] text-[#A3E5D4] border border-[#2D6B60] shadow-2xs flex items-center gap-1">

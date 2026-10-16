@@ -61,6 +61,16 @@ export default function HeroSection({ onOpenInquiry }: HeroSectionProps) {
       url: "https://the-dentalhub-dkq4k4n82-naziks-projects-8a3b46ec.vercel.app/",
       isLive: true,
     },
+    {
+      id: "valetxpress",
+      name: "ValetXpress Notts Mobility",
+      sub: "Mobile Car Valeting · Nottingham UK",
+      badge: "Live Site",
+      badgeLabel: "Live Booking",
+      icon: <Zap className="w-4 h-4 text-[#1A3E38]" />,
+      url: "https://valetxpro.vercel.app/",
+      isLive: true,
+    },
   ];
 
   const floatingAvatars = [

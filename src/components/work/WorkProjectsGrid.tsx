@@ -114,20 +114,20 @@ const projects: ProjectItem[] = [
   {
     id: "valetxpress",
     categoryKeys: ["all", "operations", "client"],
-    mockupBadge: "RECENT CLIENT PROJECT",
-    mockupHeader: "recent-project // valetxpress-mobility",
-    url: "preview.internal/valetxpress-mobility",
+    mockupBadge: "LIVE CLIENT DEPLOYMENT",
+    mockupHeader: "valetxpro.vercel.app // Mobile Valeting Notts",
+    url: "https://valetxpro.vercel.app/",
     previewImage: "/valetxpress.webp",
-    client: "ValetXpress Mobility",
-    tags: ["Recent Project", "Fleet Management", "Mobility Logistics"],
-    title: "ValetXpress Concierge & Fleet Mobility",
+    client: "ValetXpress Notts, UK",
+    tags: ["Live Deployment", "Mobile Car Valeting", "Fleet Logistics", "Booking System"],
+    title: "ValetXpress Notts — Mobile Car Valeting Across Nottingham",
     description:
-      "High-velocity digital dispatch application for on-demand vehicle valet services, digital ticketing, SMS check-ins, and multi-venue hospitality logistics.",
+      "High-velocity digital booking and service presentation application for mobile vehicle valeting, professional ceramic coating, paint correction, and automated customer booking intake across Nottingham.",
     deliverablesText:
-      "Real-Time Ticket Dispatch, Venue Check-in Engine, Stripe Payment Integration",
-    techStack: ["React", "Node.js", "WebSockets", "Google Maps API"],
-    actionText: "Inquire About Similar Build",
-    isLive: false,
+      "Mobile Service Booking Engine, Dynamic Package Selector, Responsive Gallery, WhatsApp & Direct Lead Integration",
+    techStack: ["Next.js", "Tailwind CSS", "Framer Motion", "Vercel"],
+    actionText: "Visit Live Valeting Site",
+    isLive: true,
   },
 ];
 

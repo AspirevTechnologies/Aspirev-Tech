@@ -91,17 +91,17 @@ const projects: ProjectItem[] = [
   },
   {
     id: "valetxpress",
-    title: "ValetXpress Concierge & Fleet Mobility",
-    client: "ValetXpress Mobility",
-    tags: ["Fleet Management", "Mobility Logistics"],
+    title: "ValetXpress Notts — Mobile Car Valeting Across Nottingham",
+    client: "ValetXpress Notts, UK",
+    tags: ["Mobile Car Valeting", "Fleet Logistics", "Booking System"],
     description:
-      "High-velocity digital dispatch application for on-demand vehicle valet services, digital ticketing, SMS check-ins, and multi-venue hospitality logistics.",
-    badge: "Recent Client Project",
-    footerStatus: "Fleet Dispatch Architecture",
-    url: "preview.internal/valetxpress-mobility",
+      "High-velocity digital booking and service presentation application for mobile vehicle valeting, professional ceramic coating, paint correction, and automated customer booking intake across Nottingham.",
+    badge: "Live Client Platform",
+    footerStatus: "Live Client Deployment",
+    url: "https://valetxpro.vercel.app/",
     previewImage: "/valetxpress.webp",
     category: "operations",
-    isLive: false,
+    isLive: true,
   },
 ];
 

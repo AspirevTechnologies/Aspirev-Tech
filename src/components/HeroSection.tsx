@@ -22,13 +22,24 @@ interface HeroSectionProps {
 export default function HeroSection({ onOpenInquiry }: HeroSectionProps) {
   const liveDeliverables = [
     {
+      id: "aspirev",
+      name: "Aspirev Career Intelligence",
+      sub: "BERT, LLMs & ATS Scoring Engine",
+      badge: "Live Platform",
+      badgeLabel: "Flagship Platform",
+      icon: <Sparkles className="w-4 h-4 text-[#1A3E38]" />,
+      url: "https://www.aspirev.com",
+      isLive: true,
+    },
+    {
       id: "eascca",
       name: "EASCCA Convention & Wedding OS",
       sub: "Azure Computer Vision & Multi-Role Dashboards",
       badge: "A+ Verified",
       badgeLabel: "Security & Speed",
-      icon: <Sparkles className="w-4 h-4 text-[#1A3E38]" />,
-      url: "https://eascca.lk",
+      icon: <Globe className="w-4 h-4 text-[#1A3E38]" />,
+      url: "/work#eascca",
+      isLive: false,
     },
     {
       id: "airi",
@@ -37,25 +48,18 @@ export default function HeroSection({ onOpenInquiry }: HeroSectionProps) {
       badge: "+ 100/100",
       badgeLabel: "Lighthouse",
       icon: <Globe className="w-4 h-4 text-[#1A3E38]" />,
-      url: "https://airibanquet.com",
+      url: "/work#airi-galle",
+      isLive: false,
     },
     {
       id: "dentalhub",
       name: "Dental Hub Multi-Speciality",
-      sub: "Clinical Web Portal · Colombo",
-      badge: "200 OK",
-      badgeLabel: "Live Intake",
+      sub: "Clinical Web Portal · Staging Architecture",
+      badge: "Production Code",
+      badgeLabel: "Recent Project",
       icon: <Activity className="w-4 h-4 text-[#1A3E38]" />,
-      url: "https://dentalhub.lk",
-    },
-    {
-      id: "valetxpress",
-      name: "ValetXpress Fleet Concierge",
-      sub: "Mobility Dispatch Engine · Colombo",
-      badge: "12.4ms",
-      badgeLabel: "API SLA",
-      icon: <Zap className="w-4 h-4 text-[#1A3E38]" />,
-      url: "https://valetxpress.lk",
+      url: "/work#dental-hub",
+      isLive: false,
     },
   ];
 
@@ -254,7 +258,7 @@ export default function HeroSection({ onOpenInquiry }: HeroSectionProps) {
                 <div className="flex items-center gap-2">
                   <span className="w-2.5 h-2.5 rounded-full bg-[#10B981] animate-pulse" />
                   <h3 className="font-display font-bold text-sm text-[#10221E]">
-                    Live Deliverables
+                    Flagship & Works
                   </h3>
                 </div>
                 <Link
@@ -265,37 +269,65 @@ export default function HeroSection({ onOpenInquiry }: HeroSectionProps) {
                 </Link>
               </div>
 
-              {/* 3 Live Project Transaction Rows */}
+              {/* Live Flagship & Recent Works Rows */}
               <div className="space-y-2.5">
-                {liveDeliverables.map((item) => (
-                  <a
-                    key={item.id}
-                    href={item.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex items-center justify-between p-2.5 rounded-2xl bg-[#FAF9F5] hover:bg-[#E7F3EF] border border-[#E5E0D5] transition-all"
-                  >
-                    <div className="flex items-center gap-2.5 min-w-0">
-                      <div className="w-8 h-8 rounded-full bg-white border border-[#DDD9CE] flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform shadow-2xs">
-                        {item.icon}
-                      </div>
-                      <div className="truncate">
-                        <div className="font-display font-semibold text-xs text-[#10221E] truncate group-hover:text-[#1A3E38]">
-                          {item.name}
+                {liveDeliverables.map((item) =>
+                  item.isLive ? (
+                    <a
+                      key={item.id}
+                      href={item.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group flex items-center justify-between p-2.5 rounded-2xl bg-[#FAF9F5] hover:bg-[#E7F3EF] border border-[#E5E0D5] transition-all"
+                    >
+                      <div className="flex items-center gap-2.5 min-w-0">
+                        <div className="w-8 h-8 rounded-full bg-white border border-[#DDD9CE] flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform shadow-2xs">
+                          {item.icon}
                         </div>
-                        <div className="text-[0.6875rem] text-[#526E65] truncate">
-                          {item.sub}
+                        <div className="truncate">
+                          <div className="font-display font-semibold text-xs text-[#10221E] truncate group-hover:text-[#1A3E38]">
+                            {item.name}
+                          </div>
+                          <div className="text-[0.6875rem] text-[#526E65] truncate">
+                            {item.sub}
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    <div className="text-right shrink-0 ml-2">
-                      <span className="inline-block font-mono text-xs font-bold text-[#1A3E38] bg-[#E7F3EF] border border-[#CFE4D8] px-2.5 py-0.5 rounded-full">
-                        {item.badge}
-                      </span>
-                    </div>
-                  </a>
-                ))}
+                      <div className="text-right shrink-0 ml-2">
+                        <span className="inline-block font-mono text-xs font-bold text-[#1A3E38] bg-[#E7F3EF] border border-[#CFE4D8] px-2.5 py-0.5 rounded-full">
+                          {item.badge}
+                        </span>
+                      </div>
+                    </a>
+                  ) : (
+                    <Link
+                      key={item.id}
+                      href={item.url}
+                      className="group flex items-center justify-between p-2.5 rounded-2xl bg-[#FAF9F5] hover:bg-[#E7F3EF] border border-[#E5E0D5] transition-all"
+                    >
+                      <div className="flex items-center gap-2.5 min-w-0">
+                        <div className="w-8 h-8 rounded-full bg-white border border-[#DDD9CE] flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform shadow-2xs">
+                          {item.icon}
+                        </div>
+                        <div className="truncate">
+                          <div className="font-display font-semibold text-xs text-[#10221E] truncate group-hover:text-[#1A3E38]">
+                            {item.name}
+                          </div>
+                          <div className="text-[0.6875rem] text-[#526E65] truncate">
+                            {item.sub}
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="text-right shrink-0 ml-2">
+                        <span className="inline-block font-mono text-xs font-bold text-[#1A3E38] bg-[#E7F3EF] border border-[#CFE4D8] px-2.5 py-0.5 rounded-full">
+                          {item.badge}
+                        </span>
+                      </div>
+                    </Link>
+                  )
+                )}
               </div>
             </div>
 

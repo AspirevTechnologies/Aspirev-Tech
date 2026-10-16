@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { ArrowUpRight, Lock, ExternalLink } from "lucide-react";
+import { ArrowUpRight, ArrowRight, Lock, ExternalLink, Sparkles } from "lucide-react";
 
 interface ProjectItem {
   id: string;
@@ -17,110 +17,117 @@ interface ProjectItem {
   deliverablesText: string;
   techStack: string[];
   actionText: string;
+  isLive?: boolean;
 }
 
 const projects: ProjectItem[] = [
   {
+    id: "aspirev-career",
+    categoryKeys: ["all", "saas", "venture"],
+    mockupBadge: "LIVE FLAGSHIP PLATFORM",
+    mockupHeader: "www.aspirev.com // Career Intelligence OS",
+    url: "https://www.aspirev.com",
+    previewImage: "/aspirevown.png",
+    client: "Aspirev Technologies · Live Platform",
+    tags: ["Live Platform", "BERT & LLM Models", "Career Roadmaps", "ATS Resume Engine", "In-Build Portfolio"],
+    title: "Aspirev — AI Career Intelligence Platform",
+    description:
+      "Our live, company-developed flagship platform helping students and job seekers accelerate their careers. Engineered with BERT and LLMs, featuring automated AI Career Roadmaps, an interactive Job Application Tracker, deep Resume Analysis with ATS scoring, and an In-Build Portfolio Creator.",
+    deliverablesText:
+      "BERT & LLM Scoring Models, AI Career Roadmap Matrix, Kanban Application Tracker, ATS Resume Analyzer, In-Build Portfolio Creator",
+    techStack: ["Next.js", "BERT / LLMs", "Python", "Tailwind CSS", "MongoDB / Cloud"],
+    actionText: "Launch Live Platform (www.aspirev.com)",
+    isLive: true,
+  },
+  {
     id: "eascca",
     categoryKeys: ["all", "hospitality", "client", "saas"],
-    mockupBadge: "AI VISION & EVENT OS",
-    mockupHeader: "EASCCA Convention & Wedding Sanctuary // v3.2",
-    url: "https://eascca.lk",
+    mockupBadge: "AI VISION & RECENT PROJECT",
+    mockupHeader: "recent-project // eascca-convention-os",
+    url: "preview.internal/eascca-convention-os",
     previewImage: "/EASCCA.png",
     client: "EASCCA Convention Centre",
-    tags: ["Client Enterprise", "Azure Computer Vision", "Sentiment Analysis", "A+ Performance"],
+    tags: ["Recent Project", "Azure Computer Vision", "Sentiment Analysis", "A+ Performance"],
     title: "EASCCA Grand Convention Centre & Wedding OS",
     description:
       "Enterprise wedding sanctuary and convention management suite. Integrates Azure Computer Vision to analyze Instagram and Pinterest inspiration photos and automatically match the closest decor, stage themes, and hall setups from the database. Powered by NLP sentiment analysis on inquiries, 4 dedicated role-based dashboards (Admin, Manager, Decorator, Videographer), and DSA priority queue booking architecture that eliminates race conditions and double-bookings. Rigorously verified with A+ performance and enterprise security ratings.",
     deliverablesText:
       "Azure Vision Inspiration Matcher, 4 Dedicated Role Dashboards (Admin/Manager/Decorator/Videographer), DSA Concurrency Queue Engine, NLP Sentiment Intelligence Suite",
     techStack: ["Next.js", "Node.js", "MongoDB", "Azure Computer Vision", "Sentiment NLP", "DSA Queues"],
-    actionText: "View Live Architecture",
+    actionText: "Inquire About Similar Build",
+    isLive: false,
   },
   {
     id: "airi-galle",
     categoryKeys: ["all", "hospitality", "client"],
-    mockupBadge: "LUXURY HOSPITALITY",
-    mockupHeader: "Airi Banquet Hall & Event Suites // Galle",
-    url: "https://airibanquet.com",
+    mockupBadge: "RECENT CLIENT PROJECT",
+    mockupHeader: "recent-project // airi-banquet-galle",
+    url: "preview.internal/airi-banquet-galle",
     previewImage: "/Airi.png",
-    client: "Airi Banquet Hall",
-    tags: ["Client Project", "Luxury Hospitality", "Web Platform"],
+    client: "Airi Banquet Hall, Galle",
+    tags: ["Recent Project", "Luxury Hospitality", "Web Platform"],
     title: "Airi Banquet Hall & Events — Galle",
     description:
       "A bespoke, high-conversion digital presence engineered for Galle's premier coastal wedding venue and banquet hall suites, featuring direct event booking inquiries and interactive hall showcase.",
     deliverablesText:
       "Custom Web Architecture, Interactive Event Spaces Gallery, Direct Booking Request Engine",
     techStack: ["Next.js", "Tailwind CSS", "Framer Motion", "Cloudinary"],
-    actionText: "View Live Project",
+    actionText: "Inquire About Similar Build",
+    isLive: false,
   },
   {
     id: "dental-hub",
     categoryKeys: ["all", "healthcare", "client"],
-    mockupBadge: "HEALTHCARE PORTAL",
-    mockupHeader: "Dental Hub Multi-Speciality Practice // v2.0",
-    url: "https://dentalhub.lk",
+    mockupBadge: "RECENT CLIENT PROJECT",
+    mockupHeader: "recent-project // dentalhub-clinic",
+    url: "preview.internal/dentalhub-clinic",
     previewImage: "/dentalhub.png",
     client: "Dental Hub Healthcare",
-    tags: ["Client Project", "Healthcare Portal", "Clinical Management"],
+    tags: ["Recent Project", "Healthcare Portal", "Clinical Management"],
     title: "Dental Hub Multi-Speciality Clinic",
     description:
       "A clinical digital platform engineered for patient trust, specialist doctor appointment bookings, clear treatment education, and digital intake management.",
     deliverablesText:
       "Patient Booking Flow, Treatment Information Architecture, Clinical Brand Suite",
     techStack: ["Next.js", "TypeScript", "PostgreSQL", "Twilio SMS"],
-    actionText: "View Live Project",
+    actionText: "Inquire About Similar Build",
+    isLive: false,
   },
   {
     id: "dr-malinda",
     categoryKeys: ["all", "healthcare", "client"],
-    mockupBadge: "SURGICAL PRACTICE",
-    mockupHeader: "Dr. Malinda Ekanayake Dental Practice // Colombo",
-    url: "https://drmalindaekanayake.com",
+    mockupBadge: "RECENT CLIENT PROJECT",
+    mockupHeader: "recent-project // dr-malinda-dental",
+    url: "preview.internal/dr-malinda-dental",
     previewImage: "/malinda.png",
     client: "Dr. Malinda Ekanayake Practice",
-    tags: ["Client Project", "Surgical Practice", "Patient Intake"],
+    tags: ["Recent Project", "Surgical Practice", "Patient Intake"],
     title: "Dr. Malinda Ekanayake Dental Surgery",
     description:
       "Authoritative medical practice portal for premier dental surgery, patient education, oral care treatments, and digital consultation intake.",
     deliverablesText:
       "Custom Practice Website, Patient Testimonials Showcase, Intake Consultation Form",
     techStack: ["React", "Tailwind CSS", "Headless CMS", "Calendly API"],
-    actionText: "View Live Project",
+    actionText: "Inquire About Similar Build",
+    isLive: false,
   },
   {
     id: "valetxpress",
     categoryKeys: ["all", "operations", "client"],
-    mockupBadge: "FLEET & MOBILITY",
-    mockupHeader: "ValetXpress On-Demand Mobility Dispatch // v3.4",
-    url: "https://valetxpress.lk",
+    mockupBadge: "RECENT CLIENT PROJECT",
+    mockupHeader: "recent-project // valetxpress-mobility",
+    url: "preview.internal/valetxpress-mobility",
     previewImage: "/valetxpress.png",
     client: "ValetXpress Mobility",
-    tags: ["Client Project", "Fleet Management", "Mobility Logistics"],
+    tags: ["Recent Project", "Fleet Management", "Mobility Logistics"],
     title: "ValetXpress Concierge & Fleet Mobility",
     description:
       "High-velocity digital dispatch application for on-demand vehicle valet services, digital ticketing, SMS check-ins, and multi-venue hospitality logistics.",
     deliverablesText:
       "Real-Time Ticket Dispatch, Venue Check-in Engine, Stripe Payment Integration",
     techStack: ["React", "Node.js", "WebSockets", "Google Maps API"],
-    actionText: "View Live Project",
-  },
-  {
-    id: "aspirev-career",
-    categoryKeys: ["all", "saas", "venture"],
-    mockupBadge: "STUDIO VENTURE",
-    mockupHeader: "Aspirev Career Intelligence Hub // AI Model v2.4",
-    url: "https://aspirev.com",
-    previewImage: "/aspirevown.png",
-    client: "In-House Lab Venture",
-    tags: ["Internal Venture", "AI Vector Engine", "SaaS Platform"],
-    title: "Aspirev Career Intelligence Flagship",
-    description:
-      "All-in-one AI career intelligence platform consolidating resume ATS analytics, milestone skill roadmaps, delta gap computations, and candidate application tracking.",
-    deliverablesText:
-      "Vector Resume Parser, Interactive Roadmap Matrix, Kanban Tracking Portal",
-    techStack: ["Next.js", "Tailwind CSS", "Python / NLP", "Supabase"],
-    actionText: "Visit Venture Platform",
+    actionText: "Inquire About Similar Build",
+    isLive: false,
   },
 ];
 
@@ -132,11 +139,11 @@ export default function WorkProjectsGrid({ onOpenInquiry }: WorkProjectsGridProp
   const [activeFilter, setActiveFilter] = useState<string>("all");
 
   const filterTabs = [
-    { id: "all", label: "All Works", count: 5 },
+    { id: "all", label: "All Works", count: 6 },
+    { id: "venture", label: "Live Flagship", count: 1 },
+    { id: "hospitality", label: "Hospitality & Venues", count: 2 },
     { id: "healthcare", label: "Healthcare & Clinics", count: 2 },
-    { id: "hospitality", label: "Hospitality & Venues", count: 1 },
     { id: "operations", label: "Logistics & Mobility", count: 1 },
-    { id: "venture", label: "Studio Ventures", count: 1 },
   ];
 
   const filteredProjects =
@@ -155,18 +162,16 @@ export default function WorkProjectsGrid({ onOpenInquiry }: WorkProjectsGridProp
               <button
                 key={tab.id}
                 onClick={() => setActiveFilter(tab.id)}
-                className={`inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full font-mono text-xs font-medium transition-all duration-150 cursor-pointer ${
-                  isActive
-                    ? "bg-[#1A3E38] text-white shadow-xs"
-                    : "bg-white text-[#3E534D] hover:text-[#10221E] border border-[#E5E0D5] hover:bg-[#E7F3EF]"
-                }`}
+                className={`inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full font-mono text-xs font-medium transition-all duration-150 cursor-pointer ${isActive
+                  ? "bg-[#1A3E38] text-white shadow-xs"
+                  : "bg-white text-[#3E534D] hover:text-[#10221E] border border-[#E5E0D5] hover:bg-[#E7F3EF]"
+                  }`}
               >
                 <span>{tab.label}</span>
                 {tab.count !== null && (
                   <span
-                    className={`ml-1 text-[0.6875rem] px-2 py-0.2 rounded-full font-mono font-semibold ${
-                      isActive ? "bg-white/20 text-white" : "bg-[#E7F3EF] text-[#1A3E38]"
-                    }`}
+                    className={`ml-1 text-[0.6875rem] px-2 py-0.2 rounded-full font-mono font-semibold ${isActive ? "bg-white/20 text-white" : "bg-[#E7F3EF] text-[#1A3E38]"
+                      }`}
                   >
                     {tab.count}
                   </span>
@@ -205,12 +210,21 @@ export default function WorkProjectsGrid({ onOpenInquiry }: WorkProjectsGridProp
                   <div className="flex items-center justify-between px-3.5 py-1.5 bg-[#0A221D] border-b border-white/10 text-[0.625rem] font-mono text-[#D2EAE3]">
                     <div className="flex items-center gap-1.5 truncate">
                       <Lock className="w-3 h-3 text-[#A3E5D4] shrink-0" />
-                      <span className="truncate text-[#D2EAE3]">{project.url}</span>
+                      <span className={`truncate ${project.isLive ? "text-[#A3E5D4] font-semibold" : "text-[#D2EAE3]/80"}`}>
+                        {project.url}
+                      </span>
                     </div>
-                    <span className="text-[#A3E5D4] font-semibold shrink-0 flex items-center gap-1">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#10B981] animate-pulse" />
-                      200 OK
-                    </span>
+                    {project.isLive ? (
+                      <span className="text-[#10B981] font-semibold shrink-0 flex items-center gap-1">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#10B981] animate-pulse" />
+                        Live Website · 200 OK
+                      </span>
+                    ) : (
+                      <span className="text-[#A3E5D4]/80 font-medium shrink-0 flex items-center gap-1">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#A3E5D4]" />
+                        Recent Project · Production Build
+                      </span>
+                    )}
                   </div>
 
                   {/* Scrollable Landing Page Viewport Container */}
@@ -282,24 +296,42 @@ export default function WorkProjectsGrid({ onOpenInquiry }: WorkProjectsGridProp
               {/* Action Button Link */}
               <div className="pt-3.5 border-t border-[#EFECE6] flex flex-wrap items-center justify-between gap-2">
                 <div className="flex items-center gap-2">
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#1A3E38] hover:bg-[#13332E] text-white font-ui text-xs font-semibold shadow-xs hover:shadow-md hover:-translate-y-0.5 transition-all"
-                  >
-                    <span>{project.actionText}</span>
-                    <ArrowUpRight className="w-3.5 h-3.5 text-[#A3E5D4]" />
-                  </a>
-                  <button
-                    onClick={onOpenInquiry}
-                    className="inline-flex items-center gap-1 px-3 py-2 rounded-full bg-[#E7F3EF] hover:bg-[#D7EAE4] text-[#1A3E38] font-ui text-xs font-medium border border-[#CFE4D8] transition-colors cursor-pointer"
-                  >
-                    <span>Discuss Scope</span>
-                  </button>
+                  {project.isLive ? (
+                    <>
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#1A3E38] hover:bg-[#13332E] text-white font-ui text-xs font-semibold shadow-xs hover:shadow-md hover:-translate-y-0.5 transition-all"
+                      >
+                        <Sparkles className="w-3.5 h-3.5 text-[#A3E5D4]" />
+                        <span>Launch Live Platform (www.aspirev.com)</span>
+                        <ArrowUpRight className="w-3.5 h-3.5 text-[#A3E5D4]" />
+                      </a>
+                      <button
+                        onClick={onOpenInquiry}
+                        className="inline-flex items-center gap-1 px-3 py-2 rounded-full bg-[#E7F3EF] hover:bg-[#D7EAE4] text-[#1A3E38] font-ui text-xs font-medium border border-[#CFE4D8] transition-colors cursor-pointer"
+                      >
+                        <span>Discuss Platform Scope</span>
+                      </button>
+                    </>
+                  ) : (
+                    <>
+                      <button
+                        onClick={onOpenInquiry}
+                        className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#1A3E38] hover:bg-[#13332E] text-white font-ui text-xs font-semibold shadow-xs hover:shadow-md hover:-translate-y-0.5 transition-all cursor-pointer"
+                      >
+                        <span>Inquire About Similar Build</span>
+                        <ArrowRight className="w-3.5 h-3.5 text-[#A3E5D4]" />
+                      </button>
+                      <span className="inline-flex items-center gap-1 text-[0.6875rem] font-mono text-[#526E65] px-2.5 py-1 rounded bg-[#F4F1EA] border border-[#E8E4D9]">
+                        <Lock className="w-3 h-3 text-[#1A3E38]" /> Staging Architecture Preview
+                      </span>
+                    </>
+                  )}
                 </div>
                 <span className="text-xs font-mono text-[#526E65]">
-                  Interactive Viewport
+                  Scrollable Viewport Preview
                 </span>
               </div>
             </div>

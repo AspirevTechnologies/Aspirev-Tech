@@ -21,7 +21,7 @@ export default function WorkHero() {
         <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] mb-4">
           <span className="w-2 h-2 rounded-full bg-[#10B981] animate-pulse" />
           <span className="font-mono text-xs font-medium text-[#1A3E38]">
-            [ Production Deployments · Portfolio Showcase ]
+            [ Recent Projects · Flagship Live Venture: www.aspirev.com ]
           </span>
         </div>
 
@@ -31,15 +31,15 @@ export default function WorkHero() {
         </h1>
 
         {/* Subtitle */}
-        <p className="font-body text-base sm:text-lg leading-relaxed text-[#3E534D] max-w-[680px] mb-6">
-          Explore the digital experiences, client platforms, and software architectures behind our work. Scroll inside any frame to explore the actual live site.
+        <p className="font-body text-base sm:text-lg leading-relaxed text-[#3E534D] max-w-[700px] mb-6">
+          Explore our recent client software architectures, bespoke digital platforms, and our live company-developed flagship product (<strong className="text-[#1A3E38] font-semibold">www.aspirev.com</strong>). Scroll inside any frame to inspect the real production interfaces.
         </p>
 
         {/* Trust & Provenance Metrics Row */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mb-6">
           <div className="flex items-center gap-2 p-2.5 rounded-2xl bg-[#FAF9F5] border border-[#E8E4D9]">
             <Globe className="w-3.5 h-3.5 text-[#1A3E38] shrink-0" />
-            <span className="font-mono text-xs text-[#10221E]">5 Live Deployments</span>
+            <span className="font-mono text-xs text-[#10221E]">Recent Client Projects</span>
           </div>
           <div className="flex items-center gap-2 p-2.5 rounded-2xl bg-[#FAF9F5] border border-[#E8E4D9]">
             <Zap className="w-3.5 h-3.5 text-[#1A3E38] shrink-0" />
@@ -47,11 +47,11 @@ export default function WorkHero() {
           </div>
           <div className="flex items-center gap-2 p-2.5 rounded-2xl bg-[#FAF9F5] border border-[#E8E4D9]">
             <CheckCircle2 className="w-3.5 h-3.5 text-[#1A3E38] shrink-0" />
-            <span className="font-mono text-xs text-[#10221E]">100% Client Handover</span>
+            <span className="font-mono text-xs text-[#10221E]">100% Production Code</span>
           </div>
           <div className="flex items-center gap-2 p-2.5 rounded-2xl bg-[#FAF9F5] border border-[#E8E4D9]">
             <ShieldCheck className="w-3.5 h-3.5 text-[#1A3E38] shrink-0" />
-            <span className="font-mono text-xs text-[#10221E]">Zero Hypotheticals</span>
+            <span className="font-mono text-xs text-[#10221E]">Verified AI & Web Stacks</span>
           </div>
         </div>
 
@@ -59,17 +59,17 @@ export default function WorkHero() {
         <div className="flex flex-wrap items-center gap-2.5 pt-1">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[#E5E0D5] text-xs font-mono font-medium text-[#10221E] shadow-2xs">
             <span className="w-2 h-2 rounded-full bg-[#1A3E38]" />
-            <span>Client Deployments</span>
+            <span>Recent Projects</span>
+          </div>
+
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] text-xs font-mono font-semibold text-[#1A3E38] shadow-2xs">
+            <span className="w-2 h-2 rounded-full bg-[#10B981] animate-pulse" />
+            <span>Live Flagship (www.aspirev.com)</span>
           </div>
 
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[#E5E0D5] text-xs font-mono font-medium text-[#10221E] shadow-2xs">
-            <span className="w-2 h-2 rounded-full bg-[#22564C]" />
-            <span>Studio Ventures</span>
-          </div>
-
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[#E5E0D5] text-xs font-mono font-medium text-[#10221E] shadow-2xs">
-            <span className="w-2 h-2 rounded-full bg-[#10B981]" />
-            <span>Interactive Live Previews</span>
+            <span className="w-2 h-2 rounded-full bg-[#3E534D]" />
+            <span>Interactive Scroll Previews</span>
           </div>
         </div>
       </div>

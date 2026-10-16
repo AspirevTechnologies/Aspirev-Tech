@@ -21,13 +21,13 @@ export default function VentureShowcaseSection() {
   const [activeTab, setActiveTab] = useState<"audit" | "gaps" | "queue">("audit");
 
   const chips = [
-    "AI-powered evaluation",
-    "Real-world feedback",
-    "Career roadmaps",
-    "Skill-gap insights",
-    "Adaptive interview",
-    "Application tracking",
-    "Portfolio builder",
+    "BERT & LLM Scoring",
+    "AI Career Roadmaps",
+    "Job Application Tracker",
+    "ATS Resume Analyzer",
+    "In-Build Portfolio Creator",
+    "Skill-Gap Radar",
+    "Real-World Feedback",
   ];
 
   return (
@@ -42,17 +42,17 @@ export default function VentureShowcaseSection() {
             {/* Stage Pill */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] text-[#1A3E38] text-[0.75rem] font-mono font-medium tracking-wide mb-4 shadow-2xs">
               <span className="w-1.5 h-1.5 rounded-full bg-[#1A3E38] animate-pulse" />
-              <span>[ Flagship Venture · In-House Venture Studio ]</span>
+              <span>[ Live Flagship Venture · www.aspirev.com ]</span>
             </div>
 
             {/* Headline */}
             <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-[2.5rem] leading-[1.15] tracking-[-0.025em] text-[#10221E] mb-4">
-              Meet Aspirev - career development, with more direction.
+              Meet Aspirev — Intelligent Career Acceleration OS.
             </h2>
 
             {/* Body */}
             <p className="font-body text-base leading-relaxed text-[#4A5D57] mb-6 max-w-[540px]">
-              Career preparation can feel fragmented. Aspirev brings important parts of the journey together, helping students and job seekers work on their resumes, explore career roadmaps, identify skill gaps, and organize applications.
+              Our real, live production platform built with custom BERT embeddings and LLM architectures. Aspirev empowers ambitious candidates and students with automated AI career roadmaps, a comprehensive job application tracker, deep ATS resume scoring, and an in-build portfolio generator.
             </p>
 
             {/* Feature Chips */}
@@ -69,12 +69,12 @@ export default function VentureShowcaseSection() {
 
             {/* Primary Action Button */}
             <a
-              href="https://aspirev.com"
+              href="https://www.aspirev.com"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#1A3E38] hover:bg-[#13332E] text-white font-ui font-semibold text-sm shadow-[0_4px_16px_rgba(26,62,56,0.25)] hover:shadow-[0_8px_24px_rgba(26,62,56,0.35)] hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98] transition-all duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1A3E38]"
             >
-              <span>Explore Aspirev Platform</span>
+              <span>Explore Live Platform (www.aspirev.com)</span>
               <ArrowUpRight className="w-4 h-4 stroke-[2.5]" />
             </a>
           </div>
@@ -89,7 +89,7 @@ export default function VentureShowcaseSection() {
                   <span className="w-2.5 h-2.5 rounded-full bg-yellow-400/80" />
                   <span className="w-2.5 h-2.5 rounded-full bg-green-400/80" />
                   <span className="ml-2 font-mono text-[0.6875rem] text-[#A3E5D4]/80">
-                    aspirev.com // v2.4.0
+                    www.aspirev.com // Career Intelligence OS
                   </span>
                 </div>
 
@@ -127,7 +127,7 @@ export default function VentureShowcaseSection() {
                   <div className="flex items-center justify-between px-3.5 py-2 bg-[#0A221D] border-b border-[#A3E5D4]/20 text-[0.625rem] font-mono text-[#D2EAE3]/70">
                     <div className="flex items-center gap-1.5 truncate">
                       <Lock className="w-3 h-3 text-[#A3E5D4] shrink-0" />
-                      <span className="truncate text-[#D2EAE3]">https://aspirev.com</span>
+                      <span className="truncate text-[#D2EAE3]">https://www.aspirev.com</span>
                     </div>
                     <span className="text-[#A3E5D4] font-semibold shrink-0 flex items-center gap-1">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#A3E5D4] animate-pulse" />

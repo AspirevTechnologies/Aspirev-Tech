@@ -14,10 +14,25 @@ interface ProjectItem {
   footerStatus: string;
   url: string;
   previewImage: string;
-  category: "all" | "hospitality" | "healthcare" | "operations";
+  category: "all" | "venture" | "hospitality" | "healthcare" | "operations";
+  isLive?: boolean;
 }
 
 const projects: ProjectItem[] = [
+  {
+    id: "aspirev-career",
+    title: "Aspirev — AI Career Intelligence Platform",
+    client: "Aspirev Technologies · Live Platform",
+    tags: ["BERT & LLM Models", "Career Roadmaps", "ATS Resume Engine", "In-Build Portfolio"],
+    description:
+      "Our live, company-developed flagship platform helping students and job seekers accelerate their careers. Features BERT and LLM scoring, automated AI Career Roadmaps, a Kanban Application Tracker, ATS Resume Analysis, and an In-Build Portfolio Creator.",
+    badge: "Live Flagship Platform",
+    footerStatus: "Live Platform · www.aspirev.com",
+    url: "https://www.aspirev.com",
+    previewImage: "/aspirevown.png",
+    category: "venture",
+    isLive: true,
+  },
   {
     id: "eascca",
     title: "EASCCA Grand Convention & Event Sanctuary",
@@ -25,11 +40,12 @@ const projects: ProjectItem[] = [
     tags: ["Azure Computer Vision", "Multi-Role Dashboards", "A+ Performance"],
     description:
       "Enterprise wedding sanctuary and convention platform featuring Azure Computer Vision for Pinterest/Instagram decor recommendation, NLP sentiment analysis, 4 specialized dashboards (Admin, Manager, Decorator, Videographer), and DSA booking queues with A+ verified security and speed.",
-    badge: "AI & Event OS",
-    footerStatus: "Live Enterprise Platform · A+ Audited",
-    url: "https://eascca.lk",
+    badge: "Recent Client Project",
+    footerStatus: "Staging Architecture · A+ Audited",
+    url: "preview.internal/eascca-convention-os",
     previewImage: "/EASCCA.png",
     category: "hospitality",
+    isLive: false,
   },
   {
     id: "airi-galle",
@@ -38,11 +54,12 @@ const projects: ProjectItem[] = [
     tags: ["Luxury Hospitality", "Event Space Booking"],
     description:
       "A bespoke high-conversion digital presence for Galle's premier coastal wedding venue and banquet hall, featuring real-time event booking inquiries and interactive hall showcase.",
-    badge: "Live Client Platform",
-    footerStatus: "Live Website Production",
-    url: "https://airibanquet.com",
+    badge: "Recent Client Project",
+    footerStatus: "Recent Client Platform",
+    url: "preview.internal/airi-banquet-galle",
     previewImage: "/Airi.png",
     category: "hospitality",
+    isLive: false,
   },
   {
     id: "dental-hub",
@@ -51,11 +68,12 @@ const projects: ProjectItem[] = [
     tags: ["Healthcare Web Portal", "Patient Consultation"],
     description:
       "A clinical digital platform engineered for patient trust, specialist doctor appointment bookings, clear treatment education, and digital intake management.",
-    badge: "Clinical Practice",
-    footerStatus: "Live Client Deployment",
-    url: "https://dentalhub.lk",
+    badge: "Recent Client Project",
+    footerStatus: "Recent Clinical System",
+    url: "preview.internal/dentalhub-clinic",
     previewImage: "/dentalhub.png",
     category: "healthcare",
+    isLive: false,
   },
   {
     id: "dr-malinda",
@@ -64,11 +82,12 @@ const projects: ProjectItem[] = [
     tags: ["Surgical Practice", "Specialist Healthcare"],
     description:
       "Modern patient-first healthcare presence showcasing restorative treatments, digital smile design galleries, and friction-free direct appointment scheduling.",
-    badge: "Medical Portal",
-    footerStatus: "Live Client Deployment",
-    url: "https://drmalindaekanayake.com",
+    badge: "Recent Client Project",
+    footerStatus: "Recent Healthcare System",
+    url: "preview.internal/dr-malinda-dental",
     previewImage: "/malinda.png",
     category: "healthcare",
+    isLive: false,
   },
   {
     id: "valetxpress",
@@ -77,11 +96,12 @@ const projects: ProjectItem[] = [
     tags: ["Fleet Management", "Mobility Logistics"],
     description:
       "High-velocity digital dispatch application for on-demand vehicle valet services, digital ticketing, SMS check-ins, and multi-venue hospitality logistics.",
-    badge: "Fleet Logistics",
-    footerStatus: "Operational System",
-    url: "https://valetxpress.lk",
+    badge: "Recent Client Project",
+    footerStatus: "Fleet Dispatch Architecture",
+    url: "preview.internal/valetxpress-mobility",
     previewImage: "/valetxpress.png",
     category: "operations",
+    isLive: false,
   },
 ];
 
@@ -100,22 +120,23 @@ export default function FeaturedWorkSection() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-12 gap-5">
           <div className="max-w-[620px]">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] text-[#1A3E38] text-xs font-mono font-medium tracking-wide mb-3">
-              <span>[ Production Portfolio · Real Client Work ]</span>
+              <span>[ Recent Projects · Live Flagship: www.aspirev.com ]</span>
             </div>
             <h2 className="font-display font-bold text-2xl sm:text-3xl lg:text-4xl tracking-tight text-[#10221E]">
               Good ideas deserve thoughtful execution.
             </h2>
           </div>
           <p className="font-body text-sm sm:text-base leading-relaxed text-[#3E534D] max-w-[420px]">
-            Scroll inside any browser frame below to interactively explore our actual client websites and live production architectures.
+            Scroll inside any browser frame below to interactively explore our live flagship platform and verified client project architectures.
           </p>
         </div>
 
         {/* Filter Chips */}
         <div className="flex flex-wrap items-center gap-2 mb-10">
           {[
-            { id: "all", label: "All Work" },
-            { id: "hospitality", label: "Hospitality & Luxury" },
+            { id: "all", label: "All Works (6)" },
+            { id: "venture", label: "Live Flagship (1)" },
+            { id: "hospitality", label: "Hospitality & Venues" },
             { id: "healthcare", label: "Healthcare & Clinics" },
             { id: "operations", label: "Operations & Mobility" },
           ].map((filter) => (
@@ -154,10 +175,17 @@ export default function FeaturedWorkSection() {
                       <Lock className="w-2.5 h-2.5 text-[#A3E5D4] shrink-0" />
                       <span>{project.url}</span>
                     </div>
-                    <span className="text-[0.625rem] font-ui font-medium text-[#A3E5D4] flex items-center gap-1.5">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#10B981] animate-pulse" />
-                      Live Site
-                    </span>
+                    {project.isLive ? (
+                      <span className="text-[0.625rem] font-ui font-medium text-[#A3E5D4] flex items-center gap-1.5">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#10B981] animate-pulse" />
+                        Live Platform
+                      </span>
+                    ) : (
+                      <span className="text-[0.625rem] font-ui font-medium text-[#D2EAE3]/80 flex items-center gap-1.5">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#A3E5D4]/70" />
+                        Recent Project
+                      </span>
+                    )}
                   </div>
 
                   {/* Scrollable Viewport Frame */}
@@ -207,13 +235,28 @@ export default function FeaturedWorkSection() {
 
               {/* Card Footer */}
               <div className="flex items-center justify-between pt-4 border-t border-[#EFECE6]">
-                <Link
-                  href="/work"
-                  className="inline-flex items-center gap-1.5 font-ui text-xs sm:text-sm font-semibold text-[#1A3E38] hover:text-[#13332E] group/link transition-colors"
-                >
-                  <span>Explore Case Study</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
-                </Link>
+                {project.isLive ? (
+                  <div className="flex items-center gap-3">
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 font-ui text-xs sm:text-sm font-semibold text-[#1A3E38] hover:text-[#13332E] group/link transition-colors"
+                    >
+                      <Sparkles className="w-3.5 h-3.5 text-[#2A7E68]" />
+                      <span>Launch Live Platform (www.aspirev.com)</span>
+                      <ArrowUpRight className="w-3.5 h-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform text-[#2A7E68]" />
+                    </a>
+                  </div>
+                ) : (
+                  <Link
+                    href="/work"
+                    className="inline-flex items-center gap-1.5 font-ui text-xs sm:text-sm font-semibold text-[#1A3E38] hover:text-[#13332E] group/link transition-colors"
+                  >
+                    <span>Explore Case Study & Scope</span>
+                    <ArrowUpRight className="w-3.5 h-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
+                  </Link>
+                )}
                 <span className="font-mono text-xs text-[#526E65] font-medium">
                   {project.footerStatus}
                 </span>

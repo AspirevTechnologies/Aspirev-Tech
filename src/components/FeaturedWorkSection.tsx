@@ -40,12 +40,12 @@ const projects: ProjectItem[] = [
     tags: ["Azure Computer Vision", "Multi-Role Dashboards", "A+ Performance"],
     description:
       "Enterprise wedding sanctuary and convention platform featuring Azure Computer Vision for Pinterest/Instagram decor recommendation, NLP sentiment analysis, 4 specialized dashboards (Admin, Manager, Decorator, Videographer), and DSA booking queues with A+ verified security and speed.",
-    badge: "Recent Client Project",
-    footerStatus: "Staging Architecture · A+ Audited",
-    url: "preview.internal/eascca-convention-os",
+    badge: "AI Vision · Live App",
+    footerStatus: "Live Client Deployment · A+ Audited",
+    url: "https://hotel360-mu.vercel.app/",
     previewImage: "/EASCCA.png",
     category: "hospitality",
-    isLive: false,
+    isLive: true,
   },
   {
     id: "airi-galle",
@@ -54,12 +54,12 @@ const projects: ProjectItem[] = [
     tags: ["Luxury Hospitality", "Event Space Booking"],
     description:
       "A bespoke high-conversion digital presence for Galle's premier coastal wedding venue and banquet hall, featuring real-time event booking inquiries and interactive hall showcase.",
-    badge: "Recent Client Project",
-    footerStatus: "Recent Client Platform",
-    url: "preview.internal/airi-banquet-galle",
+    badge: "Live Client Platform",
+    footerStatus: "Live Website Production",
+    url: "https://airi-bunquet-hall-d02pzwfkz-naziks-projects-8a3b46ec.vercel.app/",
     previewImage: "/Airi.png",
     category: "hospitality",
-    isLive: false,
+    isLive: true,
   },
   {
     id: "dental-hub",
@@ -68,12 +68,12 @@ const projects: ProjectItem[] = [
     tags: ["Healthcare Web Portal", "Patient Consultation"],
     description:
       "A clinical digital platform engineered for patient trust, specialist doctor appointment bookings, clear treatment education, and digital intake management.",
-    badge: "Recent Client Project",
-    footerStatus: "Recent Clinical System",
-    url: "preview.internal/dentalhub-clinic",
+    badge: "Live Clinical Practice",
+    footerStatus: "Live Clinic System",
+    url: "https://the-dentalhub-dkq4k4n82-naziks-projects-8a3b46ec.vercel.app/",
     previewImage: "/dentalhub.png",
     category: "healthcare",
-    isLive: false,
+    isLive: true,
   },
   {
     id: "dr-malinda",
@@ -82,12 +82,12 @@ const projects: ProjectItem[] = [
     tags: ["Surgical Practice", "Specialist Healthcare"],
     description:
       "Modern patient-first healthcare presence showcasing restorative treatments, digital smile design galleries, and friction-free direct appointment scheduling.",
-    badge: "Recent Client Project",
-    footerStatus: "Recent Healthcare System",
-    url: "preview.internal/dr-malinda-dental",
+    badge: "Live Surgical Practice",
+    footerStatus: "Live Medical Platform",
+    url: "https://dr-malinda-dental.vercel.app/",
     previewImage: "/malinda.png",
     category: "healthcare",
-    isLive: false,
+    isLive: true,
   },
   {
     id: "valetxpress",
@@ -244,9 +244,20 @@ export default function FeaturedWorkSection() {
                       className="inline-flex items-center gap-1.5 font-ui text-xs sm:text-sm font-semibold text-[#1A3E38] hover:text-[#13332E] group/link transition-colors"
                     >
                       <Sparkles className="w-3.5 h-3.5 text-[#2A7E68]" />
-                      <span>Launch Live Platform (www.aspirev.com)</span>
+                      <span>
+                        {project.id === "aspirev-career"
+                          ? "Launch Live Flagship (www.aspirev.com)"
+                          : "Visit Live Website"}
+                      </span>
                       <ArrowUpRight className="w-3.5 h-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform text-[#2A7E68]" />
                     </a>
+                    <span className="text-[#DDD9CE]">·</span>
+                    <Link
+                      href="/work"
+                      className="font-ui text-xs text-[#526E65] hover:text-[#1A3E38] transition-colors"
+                    >
+                      Case Study
+                    </Link>
                   </div>
                 ) : (
                   <Link

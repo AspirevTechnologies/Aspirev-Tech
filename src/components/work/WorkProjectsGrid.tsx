@@ -42,74 +42,74 @@ const projects: ProjectItem[] = [
   {
     id: "eascca",
     categoryKeys: ["all", "hospitality", "client", "saas"],
-    mockupBadge: "AI VISION & RECENT PROJECT",
-    mockupHeader: "recent-project // eascca-convention-os",
-    url: "preview.internal/eascca-convention-os",
+    mockupBadge: "LIVE DEPLOYMENT · AI VISION",
+    mockupHeader: "hotel360-mu.vercel.app // Wedding Sanctuary OS",
+    url: "https://hotel360-mu.vercel.app/",
     previewImage: "/EASCCA.png",
     client: "EASCCA Convention Centre",
-    tags: ["Recent Project", "Azure Computer Vision", "Sentiment Analysis", "A+ Performance"],
+    tags: ["Live Deployment", "Azure Computer Vision", "Sentiment Analysis", "A+ Performance"],
     title: "EASCCA Grand Convention Centre & Wedding OS",
     description:
       "Enterprise wedding sanctuary and convention management suite. Integrates Azure Computer Vision to analyze Instagram and Pinterest inspiration photos and automatically match the closest decor, stage themes, and hall setups from the database. Powered by NLP sentiment analysis on inquiries, 4 dedicated role-based dashboards (Admin, Manager, Decorator, Videographer), and DSA priority queue booking architecture that eliminates race conditions and double-bookings. Rigorously verified with A+ performance and enterprise security ratings.",
     deliverablesText:
       "Azure Vision Inspiration Matcher, 4 Dedicated Role Dashboards (Admin/Manager/Decorator/Videographer), DSA Concurrency Queue Engine, NLP Sentiment Intelligence Suite",
     techStack: ["Next.js", "Node.js", "MongoDB", "Azure Computer Vision", "Sentiment NLP", "DSA Queues"],
-    actionText: "Inquire About Similar Build",
-    isLive: false,
+    actionText: "Visit Live Wedding OS",
+    isLive: true,
   },
   {
     id: "airi-galle",
     categoryKeys: ["all", "hospitality", "client"],
-    mockupBadge: "RECENT CLIENT PROJECT",
-    mockupHeader: "recent-project // airi-banquet-galle",
-    url: "preview.internal/airi-banquet-galle",
+    mockupBadge: "LIVE CLIENT DEPLOYMENT",
+    mockupHeader: "airi-bunquet-hall.vercel.app // Galle Venue",
+    url: "https://airi-bunquet-hall-d02pzwfkz-naziks-projects-8a3b46ec.vercel.app/",
     previewImage: "/Airi.png",
     client: "Airi Banquet Hall, Galle",
-    tags: ["Recent Project", "Luxury Hospitality", "Web Platform"],
+    tags: ["Live Deployment", "Luxury Hospitality", "Web Platform"],
     title: "Airi Banquet Hall & Events — Galle",
     description:
       "A bespoke, high-conversion digital presence engineered for Galle's premier coastal wedding venue and banquet hall suites, featuring direct event booking inquiries and interactive hall showcase.",
     deliverablesText:
       "Custom Web Architecture, Interactive Event Spaces Gallery, Direct Booking Request Engine",
     techStack: ["Next.js", "Tailwind CSS", "Framer Motion", "Cloudinary"],
-    actionText: "Inquire About Similar Build",
-    isLive: false,
+    actionText: "Visit Live Banquet Site",
+    isLive: true,
   },
   {
     id: "dental-hub",
     categoryKeys: ["all", "healthcare", "client"],
-    mockupBadge: "RECENT CLIENT PROJECT",
-    mockupHeader: "recent-project // dentalhub-clinic",
-    url: "preview.internal/dentalhub-clinic",
+    mockupBadge: "LIVE CLIENT DEPLOYMENT",
+    mockupHeader: "the-dentalhub.vercel.app // Clinical System",
+    url: "https://the-dentalhub-dkq4k4n82-naziks-projects-8a3b46ec.vercel.app/",
     previewImage: "/dentalhub.png",
     client: "Dental Hub Healthcare",
-    tags: ["Recent Project", "Healthcare Portal", "Clinical Management"],
+    tags: ["Live Deployment", "Healthcare Portal", "Clinical Management"],
     title: "Dental Hub Multi-Speciality Clinic",
     description:
       "A clinical digital platform engineered for patient trust, specialist doctor appointment bookings, clear treatment education, and digital intake management.",
     deliverablesText:
       "Patient Booking Flow, Treatment Information Architecture, Clinical Brand Suite",
     techStack: ["Next.js", "TypeScript", "PostgreSQL", "Twilio SMS"],
-    actionText: "Inquire About Similar Build",
-    isLive: false,
+    actionText: "Visit Live Clinic Site",
+    isLive: true,
   },
   {
     id: "dr-malinda",
     categoryKeys: ["all", "healthcare", "client"],
-    mockupBadge: "RECENT CLIENT PROJECT",
-    mockupHeader: "recent-project // dr-malinda-dental",
-    url: "preview.internal/dr-malinda-dental",
+    mockupBadge: "LIVE CLIENT DEPLOYMENT",
+    mockupHeader: "dr-malinda-dental.vercel.app // Dental Surgery",
+    url: "https://dr-malinda-dental.vercel.app/",
     previewImage: "/malinda.png",
     client: "Dr. Malinda Ekanayake Practice",
-    tags: ["Recent Project", "Surgical Practice", "Patient Intake"],
+    tags: ["Live Deployment", "Surgical Practice", "Patient Intake"],
     title: "Dr. Malinda Ekanayake Dental Surgery",
     description:
       "Authoritative medical practice portal for premier dental surgery, patient education, oral care treatments, and digital consultation intake.",
     deliverablesText:
       "Custom Practice Website, Patient Testimonials Showcase, Intake Consultation Form",
     techStack: ["React", "Tailwind CSS", "Headless CMS", "Calendly API"],
-    actionText: "Inquire About Similar Build",
-    isLive: false,
+    actionText: "Visit Live Dental Practice",
+    isLive: true,
   },
   {
     id: "valetxpress",
@@ -305,14 +305,14 @@ export default function WorkProjectsGrid({ onOpenInquiry }: WorkProjectsGridProp
                         className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#1A3E38] hover:bg-[#13332E] text-white font-ui text-xs font-semibold shadow-xs hover:shadow-md hover:-translate-y-0.5 transition-all"
                       >
                         <Sparkles className="w-3.5 h-3.5 text-[#A3E5D4]" />
-                        <span>Launch Live Platform (www.aspirev.com)</span>
+                        <span>{project.actionText}</span>
                         <ArrowUpRight className="w-3.5 h-3.5 text-[#A3E5D4]" />
                       </a>
                       <button
                         onClick={onOpenInquiry}
                         className="inline-flex items-center gap-1 px-3 py-2 rounded-full bg-[#E7F3EF] hover:bg-[#D7EAE4] text-[#1A3E38] font-ui text-xs font-medium border border-[#CFE4D8] transition-colors cursor-pointer"
                       >
-                        <span>Discuss Platform Scope</span>
+                        <span>Discuss Scope</span>
                       </button>
                     </>
                   ) : (

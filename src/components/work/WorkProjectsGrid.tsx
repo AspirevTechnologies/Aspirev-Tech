@@ -36,7 +36,7 @@ const projects: ProjectItem[] = [
     deliverablesText:
       "BERT & LLM Scoring Models, AI Career Roadmap Matrix, Kanban Application Tracker, ATS Resume Analyzer, In-Build Portfolio Creator",
     techStack: ["Next.js", "BERT / LLMs", "Python", "Tailwind CSS", "MongoDB / Cloud"],
-    actionText: "Launch Live Platform (www.aspirev.com)",
+    actionText: "Launch Live Flagship",
     isLive: true,
   },
   {
@@ -152,7 +152,7 @@ export default function WorkProjectsGrid({ onOpenInquiry }: WorkProjectsGridProp
       : projects.filter((p) => p.categoryKeys.includes(activeFilter));
 
   return (
-    <section className="py-12 md:py-16 bg-white">
+    <section className="py-12 md:py-16 bg-white overflow-hidden w-full max-w-full">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Filter Bar */}
         <div className="flex flex-wrap items-center gap-2 mb-8 md:mb-10 border-b border-[#E8E4D9] pb-5">
@@ -192,22 +192,24 @@ export default function WorkProjectsGrid({ onOpenInquiry }: WorkProjectsGridProp
                 {/* Scrollable Browser Window Mockup Frame */}
                 <div className="rounded-2xl border border-[#2D6B60] overflow-hidden bg-[#071714] shadow-md mb-4">
                   {/* Window Bar */}
-                  <div className="flex items-center justify-between px-3.5 py-2 bg-[#0A221D] border-b border-white/10">
-                    <div className="flex items-center gap-1.5">
-                      <span className="w-2.5 h-2.5 rounded-full bg-rose-400" />
-                      <span className="w-2.5 h-2.5 rounded-full bg-amber-400" />
-                      <span className="w-2.5 h-2.5 rounded-full bg-emerald-400" />
-                      <span className="ml-2 font-mono text-[0.625rem] text-[#D2EAE3] truncate max-w-[170px] sm:max-w-[220px]">
+                  <div className="flex items-center justify-between px-3 sm:px-3.5 py-2 bg-[#0A221D] border-b border-white/10 gap-2">
+                    <div className="flex items-center gap-1.5 min-w-0">
+                      <div className="flex items-center gap-1 shrink-0">
+                        <span className="w-2.5 h-2.5 rounded-full bg-rose-400" />
+                        <span className="w-2.5 h-2.5 rounded-full bg-amber-400" />
+                        <span className="w-2.5 h-2.5 rounded-full bg-emerald-400" />
+                      </div>
+                      <span className="ml-1 sm:ml-2 font-mono text-[0.625rem] text-[#D2EAE3] truncate max-w-[130px] sm:max-w-[220px]">
                         {project.mockupHeader}
                       </span>
                     </div>
-                    <span className="text-[0.625rem] font-mono font-semibold px-2.5 py-0.5 rounded-full bg-[#1A3E38] text-[#A3E5D4] border border-[#2D6B60] shadow-2xs">
+                    <span className="text-[0.625rem] font-mono font-semibold px-2 sm:px-2.5 py-0.5 rounded-full bg-[#1A3E38] text-[#A3E5D4] border border-[#2D6B60] shadow-2xs shrink-0">
                       {project.mockupBadge}
                     </span>
                   </div>
 
                   {/* Browser Address Bar */}
-                  <div className="flex items-center justify-between px-3.5 py-1.5 bg-[#0A221D] border-b border-white/10 text-[0.625rem] font-mono text-[#D2EAE3]">
+                  <div className="flex items-center justify-between px-3 sm:px-3.5 py-1.5 bg-[#0A221D] border-b border-white/10 text-[0.625rem] font-mono text-[#D2EAE3] gap-2">
                     <div className="flex items-center gap-1.5 truncate">
                       <Lock className="w-3 h-3 text-[#A3E5D4] shrink-0" />
                       <span className={`truncate ${project.isLive ? "text-[#A3E5D4] font-semibold" : "text-[#D2EAE3]/80"}`}>
@@ -217,12 +219,12 @@ export default function WorkProjectsGrid({ onOpenInquiry }: WorkProjectsGridProp
                     {project.isLive ? (
                       <span className="text-[#10B981] font-semibold shrink-0 flex items-center gap-1">
                         <span className="w-1.5 h-1.5 rounded-full bg-[#10B981] animate-pulse" />
-                        Live Website · 200 OK
+                        Live · 200 OK
                       </span>
                     ) : (
                       <span className="text-[#A3E5D4]/80 font-medium shrink-0 flex items-center gap-1">
                         <span className="w-1.5 h-1.5 rounded-full bg-[#A3E5D4]" />
-                        Recent Project · Production Build
+                        Staging
                       </span>
                     )}
                   </div>
@@ -295,19 +297,19 @@ export default function WorkProjectsGrid({ onOpenInquiry }: WorkProjectsGridProp
               </div>
 
               {/* Action Button Link */}
-              <div className="pt-3.5 border-t border-[#EFECE6] flex flex-wrap items-center justify-between gap-2">
-                <div className="flex items-center gap-2">
+              <div className="pt-3.5 border-t border-[#EFECE6] flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div className="flex flex-wrap items-center gap-2">
                   {project.isLive ? (
                     <>
                       <a
                         href={project.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#1A3E38] hover:bg-[#13332E] text-white font-ui text-xs font-semibold shadow-xs hover:shadow-md hover:-translate-y-0.5 transition-all"
+                        className="inline-flex items-center gap-1.5 px-3.5 sm:px-4 py-2 rounded-full bg-[#1A3E38] hover:bg-[#13332E] text-white font-ui text-xs font-semibold shadow-xs hover:shadow-md hover:-translate-y-0.5 transition-all"
                       >
-                        <Sparkles className="w-3.5 h-3.5 text-[#A3E5D4]" />
+                        <Sparkles className="w-3.5 h-3.5 text-[#A3E5D4] shrink-0" />
                         <span>{project.actionText}</span>
-                        <ArrowUpRight className="w-3.5 h-3.5 text-[#A3E5D4]" />
+                        <ArrowUpRight className="w-3.5 h-3.5 text-[#A3E5D4] shrink-0" />
                       </a>
                       <button
                         onClick={onOpenInquiry}
@@ -323,15 +325,15 @@ export default function WorkProjectsGrid({ onOpenInquiry }: WorkProjectsGridProp
                         className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#1A3E38] hover:bg-[#13332E] text-white font-ui text-xs font-semibold shadow-xs hover:shadow-md hover:-translate-y-0.5 transition-all cursor-pointer"
                       >
                         <span>Inquire About Similar Build</span>
-                        <ArrowRight className="w-3.5 h-3.5 text-[#A3E5D4]" />
+                        <ArrowRight className="w-3.5 h-3.5 text-[#A3E5D4] shrink-0" />
                       </button>
                       <span className="inline-flex items-center gap-1 text-[0.6875rem] font-mono text-[#526E65] px-2.5 py-1 rounded bg-[#F4F1EA] border border-[#E8E4D9]">
-                        <Lock className="w-3 h-3 text-[#1A3E38]" /> Staging Architecture Preview
+                        <Lock className="w-3 h-3 text-[#1A3E38] shrink-0" /> Staging Preview
                       </span>
                     </>
                   )}
                 </div>
-                <span className="text-xs font-mono text-[#526E65]">
+                <span className="text-[0.6875rem] font-mono text-[#526E65]">
                   Scrollable Viewport Preview
                 </span>
               </div>

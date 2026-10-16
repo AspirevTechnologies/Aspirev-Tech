@@ -105,11 +105,11 @@ export default function ProjectInquiryModal({
       {/* Modal Card */}
       <div className="relative w-full max-w-[600px] max-h-[90vh] overflow-y-auto bg-white rounded-3xl border border-[#E5E0D5] shadow-2xl z-10 my-4 sm:my-8 animate-in fade-in zoom-in-95 duration-200">
         {/* Modal Header */}
-        <div className="flex items-center justify-between p-5 sm:p-6 border-b border-[#E5E0D5] bg-[#FAF9F5]">
+        <div className="flex items-center justify-between p-4 sm:p-6 border-b border-[#E5E0D5] bg-[#FAF9F5]">
           <div>
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] text-[#1A3E38] text-[0.6875rem] font-mono font-medium tracking-wide mb-1.5">
-              <Sparkles className="w-3 h-3 text-[#1A3E38]" />
-              <span>[ Project Discovery · Studio Intake ]</span>
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] text-[#1A3E38] text-[0.6875rem] font-mono font-medium tracking-wide mb-1.5 max-w-full">
+              <Sparkles className="w-3 h-3 text-[#1A3E38] shrink-0" />
+              <span className="truncate">[ Project Discovery · Studio Intake ]</span>
             </div>
             <h3 className="font-display font-bold text-[1.25rem] text-[#10221E]">
               Start a Project with Aspirev
@@ -125,7 +125,7 @@ export default function ProjectInquiryModal({
 
         {submitted ? (
           /* Success Screen */
-          <div className="p-8 text-center flex flex-col items-center">
+          <div className="p-6 sm:p-8 text-center flex flex-col items-center">
             <div className="w-14 h-14 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] text-[#1A3E38] flex items-center justify-center mb-4">
               <CheckCircle2 className="w-8 h-8" />
             </div>
@@ -168,7 +168,7 @@ export default function ProjectInquiryModal({
           </div>
         ) : (
           /* Form Content */
-          <form onSubmit={handleSubmit} className="p-5 sm:p-6 space-y-5">
+          <form onSubmit={handleSubmit} className="p-4 sm:p-6 space-y-4 sm:space-y-5">
             {/* Service Scope selector */}
             <div>
               <label className="block font-ui text-[0.8125rem] font-semibold text-[#10221E] mb-2">
@@ -367,7 +367,7 @@ export default function ProjectInquiryModal({
             </div>
 
             {/* Actions */}
-            <div className="pt-3 flex flex-wrap items-center justify-between gap-3 border-t border-[#E5E0D5]">
+            <div className="pt-3 flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-t border-[#E5E0D5]">
               <div className="flex flex-col">
                 <span className="text-[0.75rem] font-mono text-[#526E65]">
                   [ Strict confidentiality · Under NDA ]

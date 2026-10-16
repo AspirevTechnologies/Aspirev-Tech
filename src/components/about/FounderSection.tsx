@@ -5,12 +5,12 @@ import { CheckCircle2, ArrowUpRight } from "lucide-react";
 
 export default function FounderSection() {
   return (
-    <section className="py-12 md:py-16 bg-white border-b border-[#E8E4D9]">
+    <section className="py-12 md:py-16 bg-white border-b border-[#E8E4D9] overflow-hidden w-full max-w-full">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-[700px] mb-8 md:mb-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] text-[#1A3E38] text-xs font-mono font-medium mb-3">
-            <span>[ Founder-Led Engineering · Mohamed Nazik ]</span>
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] text-[#1A3E38] text-xs font-mono font-medium mb-3 max-w-full">
+            <span className="truncate">[ Founder-Led Engineering · Mohamed Nazik ]</span>
           </div>
           <h2 className="font-display font-bold text-2xl sm:text-3xl lg:text-4xl tracking-tight text-[#10221E] mb-2.5">
             Founder-Led & Hands-On Engineering
@@ -104,7 +104,7 @@ export default function FounderSection() {
               </div>
 
               {/* Direct Reach */}
-              <div className="pt-3 border-t border-[#EFECE6] flex flex-wrap items-center justify-between gap-3 text-xs font-mono">
+              <div className="pt-3 border-t border-[#EFECE6] flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 text-xs font-mono break-all sm:break-normal">
                 <a
                   href="mailto:hello.aspirev@gmail.com"
                   className="text-[#1A3E38] font-semibold hover:underline"
@@ -160,7 +160,7 @@ export default function FounderSection() {
               </div>
             </div>
 
-            <div className="pt-5 mt-5 border-t border-[#2D6B60] text-xs font-mono text-[#D2EAE3]/80">
+            <div className="pt-5 mt-5 border-t border-[#2D6B60] text-xs font-mono text-[#D2EAE3]/80 break-words sm:break-normal">
               LEAD ARCHITECT INVOLVEMENT: 100% · DIRECT ENGAGEMENT
             </div>
           </div>

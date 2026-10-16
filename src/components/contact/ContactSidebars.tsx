@@ -11,9 +11,9 @@ import {
 
 export default function ContactSidebars() {
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 w-full max-w-full">
       {/* Card 1: What Happens Next? */}
-      <div className="bg-white rounded-3xl border border-[#E5E0D5] p-6 sm:p-7 shadow-xs">
+      <div className="bg-white rounded-3xl border border-[#E5E0D5] p-5 sm:p-7 shadow-xs">
         <h3 className="font-display font-bold text-lg text-[#10221E] mb-5 flex items-center gap-2">
           <Sparkles className="w-5 h-5 text-[#1A3E38]" />
           <span>What happens next?</span>
@@ -65,7 +65,7 @@ export default function ContactSidebars() {
       </div>
 
       {/* Card 2: Studio Direct (Dark Stage) */}
-      <div className="bg-[#102E27] text-white rounded-3xl border border-[#2D6B60] p-6 sm:p-7 shadow-xl relative overflow-hidden">
+      <div className="bg-[#102E27] text-white rounded-3xl border border-[#2D6B60] p-5 sm:p-7 shadow-xl relative overflow-hidden">
         <div className="flex items-center justify-between mb-4">
           <div>
             <span className="font-mono text-[0.6875rem] font-semibold text-[#A3E5D4] uppercase tracking-wider block mb-0.5">
@@ -90,11 +90,11 @@ export default function ContactSidebars() {
               <div className="text-[0.6875rem] font-ui text-[#D2EAE3]">
                 Project Inquiries & Founder Contact
               </div>
-              <div className="font-mono text-xs text-[#A3E5D4] group-hover:underline">
+              <div className="font-mono text-xs text-[#A3E5D4] group-hover:underline break-all sm:break-normal">
                 hello.aspirev@gmail.com
               </div>
             </div>
-            <ArrowUpRight className="w-4 h-4 text-[#A3E5D4] group-hover:text-white transition-colors" />
+            <ArrowUpRight className="w-4 h-4 text-[#A3E5D4] group-hover:text-white transition-colors shrink-0" />
           </a>
 
           <a
@@ -129,7 +129,7 @@ export default function ContactSidebars() {
       </div>
 
       {/* Card 3: Honest Expectations (FAQ) */}
-      <div className="bg-white rounded-3xl border border-[#E5E0D5] p-6 sm:p-7 shadow-xs space-y-4">
+      <div className="bg-white rounded-3xl border border-[#E5E0D5] p-5 sm:p-7 shadow-xs space-y-4">
         <h3 className="font-display font-bold text-lg text-[#10221E] flex items-center gap-2">
           <HelpCircle className="w-5 h-5 text-[#1A3E38]" />
           <span>Honest Expectations</span>

@@ -5,7 +5,7 @@ import { Sliders, Box, Code } from "lucide-react";
 
 export default function LiveFoundationAssetsBanner() {
   return (
-    <section className="py-12 md:py-16 bg-white border-t border-[#E8E4D9]">
+    <section className="py-12 md:py-16 bg-white border-t border-[#E8E4D9] overflow-hidden w-full max-w-full">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="rounded-3xl bg-[#102E27] text-white p-6 sm:p-8 md:p-10 border border-[#2D6B60] shadow-xl relative overflow-hidden">
           {/* Subtle background glow */}

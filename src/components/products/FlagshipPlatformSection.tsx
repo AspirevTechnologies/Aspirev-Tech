@@ -22,13 +22,13 @@ export default function FlagshipPlatformSection({
   const [viewMode, setViewMode] = useState<"preview" | "console">("preview");
 
   return (
-    <section id="aspirev-platform" className="py-12 md:py-16 bg-white border-b border-[#E8E4D9]">
+    <section id="aspirev-platform" className="py-12 md:py-16 bg-white border-b border-[#E8E4D9] overflow-hidden w-full max-w-full">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header & Access Actions */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-8 md:mb-12 gap-6">
           <div className="max-w-[720px]">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] mb-3">
-              <span className="font-mono text-xs font-medium text-[#1A3E38]">
+            <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] mb-3 max-w-full">
+              <span className="font-mono text-[0.6875rem] sm:text-xs font-medium text-[#1A3E38] truncate sm:whitespace-normal">
                 [ Flagship Venture Platform · Mohamed Nazik ]
               </span>
             </div>
@@ -49,12 +49,12 @@ export default function FlagshipPlatformSection({
               <ArrowUpRight className="w-4 h-4 text-[#A3E5D4]" />
             </button>
             <a
-              href="https://aspirev.com"
+              href="https://www.aspirev.com"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto text-center px-3.5 py-2 rounded-full bg-[#FAF9F5] hover:bg-[#E7F3EF] border border-[#E5E0D5] text-xs font-mono text-[#1A3E38] font-semibold transition-colors"
             >
-              https://aspirev.com ↗
+              www.aspirev.com ↗
             </a>
           </div>
         </div>
@@ -67,8 +67,8 @@ export default function FlagshipPlatformSection({
               <span className="w-2.5 h-2.5 rounded-full bg-rose-400/80" />
               <span className="w-2.5 h-2.5 rounded-full bg-amber-400/80" />
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-400/80" />
-              <span className="ml-2 font-mono text-xs text-[#D2EAE3]">
-                aspirev-platform // {viewMode === "preview" ? "live-production-capture" : "candidate-radar-hud"} // v2.4.0
+              <span className="ml-2 font-mono text-[0.6875rem] sm:text-xs text-[#D2EAE3] truncate max-w-[180px] xs:max-w-[240px] sm:max-w-none">
+                aspirev-platform // {viewMode === "preview" ? "live-capture" : "radar-hud"} // v2.4
               </span>
             </div>
 

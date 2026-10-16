@@ -48,12 +48,12 @@ const steps: StepItem[] = [
 
 export default function ProcessSection() {
   return (
-    <section className="py-14 md:py-20 bg-white border-b border-[#E8E4D9]">
+    <section className="py-14 md:py-20 bg-white border-b border-[#E8E4D9] overflow-hidden w-full max-w-full">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-[640px] mb-10 md:mb-12">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] text-[#1A3E38] text-xs font-mono font-medium tracking-wide mb-3">
-            <span>[ Our 4-Stage Methodology ]</span>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] text-[#1A3E38] text-xs font-mono font-medium tracking-wide mb-3 max-w-full">
+            <span className="truncate">[ Our 4-Stage Methodology ]</span>
           </div>
           <h2 className="font-display font-bold text-2xl sm:text-3xl lg:text-4xl tracking-tight text-[#10221E]">
             Thoughtful from the first conversation to launch.

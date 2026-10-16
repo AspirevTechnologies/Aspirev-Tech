@@ -11,11 +11,11 @@ export default function PrivacyPage() {
   const [inquiryModalOpen, setInquiryModalOpen] = useState(false);
 
   return (
-    <main className="min-h-screen bg-white text-[#10221E] flex flex-col font-sans">
+    <main className="min-h-screen bg-white text-[#10221E] flex flex-col font-sans overflow-x-hidden w-full max-w-full">
       <Navbar onOpenInquiry={() => setInquiryModalOpen(true)} />
 
       {/* Header Banner */}
-      <section className="pt-28 pb-12 md:pt-36 md:pb-16 bg-gradient-to-b from-[#E7F3EF]/60 to-white border-b border-[#E8E4D9]">
+      <section className="pt-28 pb-12 md:pt-36 md:pb-16 bg-gradient-to-b from-[#E7F3EF]/60 to-white border-b border-[#E8E4D9] overflow-hidden w-full max-w-full">
         <div className="max-w-[960px] mx-auto px-4 sm:px-6 lg:px-8">
           <Link
             href="/"
@@ -25,9 +25,9 @@ export default function PrivacyPage() {
             <span>Back to Home</span>
           </Link>
 
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] text-[#1A3E38] text-xs font-mono font-medium mb-3">
-            <ShieldCheck className="w-3.5 h-3.5 text-[#1A3E38]" />
-            <span>[ Legal Readiness · PDPA & GDPR Framework ]</span>
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] text-[#1A3E38] text-xs font-mono font-medium mb-3 max-w-full">
+            <ShieldCheck className="w-3.5 h-3.5 text-[#1A3E38] shrink-0" />
+            <span className="truncate">[ Legal Readiness · PDPA & GDPR Framework ]</span>
           </div>
 
           <h1 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl tracking-tight text-[#10221E] mb-3">
@@ -49,7 +49,7 @@ export default function PrivacyPage() {
       </section>
 
       {/* Main Policy Content */}
-      <section className="py-12 md:py-16 bg-white">
+      <section className="py-12 md:py-16 bg-white overflow-hidden w-full max-w-full">
         <div className="max-w-[960px] mx-auto px-4 sm:px-6 lg:px-8 font-body text-sm sm:text-base text-[#3E534D] leading-relaxed space-y-8">
           {/* Executive Notice */}
           <div className="p-5 sm:p-6 rounded-2xl bg-[#FAF9F5] border border-[#E5E0D5]">
@@ -177,7 +177,7 @@ export default function PrivacyPage() {
               For any questions regarding this policy or our data practices:
             </p>
             <div className="space-y-1 text-xs font-mono">
-              <div>Email: <a href="mailto:hello.aspirev@gmail.com" className="text-[#A3E5D4] underline">hello.aspirev@gmail.com</a></div>
+              <div>Email: <a href="mailto:hello.aspirev@gmail.com" className="text-[#A3E5D4] underline break-all sm:break-normal">hello.aspirev@gmail.com</a></div>
               <div>WhatsApp: +94 78 784 4914</div>
               <div>Operator: Mohamed Nazik, trading as Aspirev Technologies</div>
               <div>Location: Colombo, Sri Lanka</div>

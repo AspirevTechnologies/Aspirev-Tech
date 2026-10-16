@@ -92,7 +92,7 @@ export default function ServiceDetailCard({
           {/* Action CTA Button */}
           <button
             onClick={onOpenInquiry}
-            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#1A3E38] hover:bg-[#13332E] text-white font-ui font-semibold text-xs sm:text-sm shadow-[0_4px_16px_rgba(26,62,56,0.2)] hover:shadow-[0_8px_24px_rgba(26,62,56,0.3)] transition-all duration-150 cursor-pointer"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-[#1A3E38] hover:bg-[#13332E] text-white font-ui font-semibold text-xs sm:text-sm shadow-[0_4px_16px_rgba(26,62,56,0.2)] hover:shadow-[0_8px_24px_rgba(26,62,56,0.3)] transition-all duration-150 cursor-pointer"
           >
             <span>{service.buttonText}</span>
             <ArrowRight className="w-3.5 h-3.5" />
@@ -104,17 +104,19 @@ export default function ServiceDetailCard({
           {/* Mockup 1: Web Design & Development (Real Live Browser Window with Airi.webp) */}
           {service.mockupType === "web" && (
             <div className="rounded-2xl border border-[#2D6B60] overflow-hidden bg-[#071714] shadow-md">
-              <div className="flex items-center justify-between px-3.5 py-2.5 bg-[#0A221D] border-b border-white/10">
-                <div className="flex items-center gap-1.5">
-                  <span className="w-2.5 h-2.5 rounded-full bg-rose-400" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-amber-400" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-400" />
-                  <span className="ml-2 font-mono text-[0.625rem] text-[#D2EAE3] truncate max-w-[160px]">
+              <div className="flex items-center justify-between px-3 sm:px-3.5 py-2.5 bg-[#0A221D] border-b border-white/10 gap-2">
+                <div className="flex items-center gap-1.5 min-w-0">
+                  <div className="flex items-center gap-1 shrink-0">
+                    <span className="w-2.5 h-2.5 rounded-full bg-rose-400" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-amber-400" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-emerald-400" />
+                  </div>
+                  <span className="ml-1 sm:ml-2 font-mono text-[0.625rem] text-[#D2EAE3] truncate max-w-[130px] sm:max-w-[160px]">
                     airi-bunquet-hall.vercel.app
                   </span>
                 </div>
                 {/* 100/100 Lighthouse Metric Pill */}
-                <span className="text-[0.625rem] font-mono font-semibold px-2.5 py-0.5 rounded-full bg-[#1A3E38] text-[#A3E5D4] border border-[#2D6B60] shadow-2xs flex items-center gap-1">
+                <span className="text-[0.625rem] font-mono font-semibold px-2 sm:px-2.5 py-0.5 rounded-full bg-[#1A3E38] text-[#A3E5D4] border border-[#2D6B60] shadow-2xs flex items-center gap-1 shrink-0">
                   <Zap className="w-3 h-3 text-[#A3E5D4]" />
                   100/100 Lighthouse
                 </span>
@@ -141,18 +143,20 @@ export default function ServiceDetailCard({
           {/* Mockup 2: UI/UX & Product Design (Clinical UI Architecture with dentalhub.webp) */}
           {service.mockupType === "design" && (
             <div className="rounded-2xl border border-[#2D6B60] overflow-hidden bg-[#071714] shadow-md">
-              <div className="flex items-center justify-between px-3.5 py-2.5 bg-[#0A221D] border-b border-white/10">
-                <div className="flex items-center gap-1.5">
-                  <span className="w-2.5 h-2.5 rounded-full bg-rose-400" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-amber-400" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-400" />
-                  <span className="ml-2 font-mono text-[0.625rem] text-[#D2EAE3] truncate max-w-[170px]">
+              <div className="flex items-center justify-between px-3 sm:px-3.5 py-2.5 bg-[#0A221D] border-b border-white/10 gap-2">
+                <div className="flex items-center gap-1.5 min-w-0">
+                  <div className="flex items-center gap-1 shrink-0">
+                    <span className="w-2.5 h-2.5 rounded-full bg-rose-400" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-amber-400" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-emerald-400" />
+                  </div>
+                  <span className="ml-1 sm:ml-2 font-mono text-[0.625rem] text-[#D2EAE3] truncate max-w-[130px] sm:max-w-[170px]">
                     the-dentalhub.vercel.app
                   </span>
                 </div>
-                <span className="text-[0.625rem] font-mono font-semibold px-2.5 py-0.5 rounded-full bg-[#1A3E38] text-[#A3E5D4] border border-[#2D6B60] shadow-2xs flex items-center gap-1">
+                <span className="text-[0.625rem] font-mono font-semibold px-2 sm:px-2.5 py-0.5 rounded-full bg-[#1A3E38] text-[#A3E5D4] border border-[#2D6B60] shadow-2xs flex items-center gap-1 shrink-0">
                   <Layers className="w-3 h-3 text-[#A3E5D4]" />
-                  WCAG AAA · Design Tokens
+                  WCAG AAA
                 </span>
               </div>
 
@@ -177,18 +181,20 @@ export default function ServiceDetailCard({
           {/* Mockup 3: Web Applications & Custom Software (Fleet Dispatch Suite with valetxpress.webp) */}
           {service.mockupType === "software" && (
             <div className="rounded-2xl border border-[#2D6B60] overflow-hidden bg-[#071714] shadow-md">
-              <div className="flex items-center justify-between px-3.5 py-2.5 bg-[#0A221D] border-b border-white/10">
-                <div className="flex items-center gap-1.5">
-                  <span className="w-2.5 h-2.5 rounded-full bg-rose-400" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-amber-400" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-400" />
-                  <span className="ml-2 font-mono text-[0.625rem] text-[#D2EAE3] truncate max-w-[170px]">
+              <div className="flex items-center justify-between px-3 sm:px-3.5 py-2.5 bg-[#0A221D] border-b border-white/10 gap-2">
+                <div className="flex items-center gap-1.5 min-w-0">
+                  <div className="flex items-center gap-1 shrink-0">
+                    <span className="w-2.5 h-2.5 rounded-full bg-rose-400" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-amber-400" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-emerald-400" />
+                  </div>
+                  <span className="ml-1 sm:ml-2 font-mono text-[0.625rem] text-[#D2EAE3] truncate max-w-[130px] sm:max-w-[170px]">
                     valetxpro.vercel.app
                   </span>
                 </div>
-                <span className="text-[0.625rem] font-mono font-semibold px-2.5 py-0.5 rounded-full bg-[#1A3E38] text-[#A3E5D4] border border-[#2D6B60] shadow-2xs flex items-center gap-1">
+                <span className="text-[0.625rem] font-mono font-semibold px-2 sm:px-2.5 py-0.5 rounded-full bg-[#1A3E38] text-[#A3E5D4] border border-[#2D6B60] shadow-2xs flex items-center gap-1 shrink-0">
                   <Zap className="w-3 h-3 text-[#A3E5D4]" />
-                  12.4ms Dispatch SLA
+                  12.4ms SLA
                 </span>
               </div>
 
@@ -213,18 +219,20 @@ export default function ServiceDetailCard({
           {/* Mockup 4: AI & Intelligent Solutions (Vector Engine Platform with aspirevown.webp) */}
           {service.mockupType === "ai" && (
             <div className="rounded-2xl border border-[#2D6B60] overflow-hidden bg-[#071714] shadow-md">
-              <div className="flex items-center justify-between px-3.5 py-2.5 bg-[#0A221D] border-b border-white/10">
-                <div className="flex items-center gap-1.5">
-                  <span className="w-2.5 h-2.5 rounded-full bg-rose-400" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-amber-400" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-400" />
-                  <span className="ml-2 font-mono text-[0.625rem] text-[#D2EAE3] truncate max-w-[170px]">
-                    https://www.aspirev.com
+              <div className="flex items-center justify-between px-3 sm:px-3.5 py-2.5 bg-[#0A221D] border-b border-white/10 gap-2">
+                <div className="flex items-center gap-1.5 min-w-0">
+                  <div className="flex items-center gap-1 shrink-0">
+                    <span className="w-2.5 h-2.5 rounded-full bg-rose-400" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-amber-400" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-emerald-400" />
+                  </div>
+                  <span className="ml-1 sm:ml-2 font-mono text-[0.625rem] text-[#D2EAE3] truncate max-w-[130px] sm:max-w-[170px]">
+                    aspirev.com
                   </span>
                 </div>
-                <span className="text-[0.625rem] font-mono font-semibold px-2.5 py-0.5 rounded-full bg-[#1A3E38] text-[#A3E5D4] border border-[#2D6B60] shadow-2xs flex items-center gap-1">
+                <span className="text-[0.625rem] font-mono font-semibold px-2 sm:px-2.5 py-0.5 rounded-full bg-[#1A3E38] text-[#A3E5D4] border border-[#2D6B60] shadow-2xs flex items-center gap-1 shrink-0">
                   <Sparkles className="w-3 h-3 text-[#A3E5D4]" />
-                  98.4% ATS Vector Match
+                  98.4% ATS Match
                 </span>
               </div>
 

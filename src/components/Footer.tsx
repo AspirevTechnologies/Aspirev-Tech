@@ -15,19 +15,20 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#13332E] text-white pt-16 pb-12 border-t border-[#22524A]">
+    <footer className="bg-[#13332E] text-white pt-16 pb-12 border-t border-[#22524A] overflow-hidden w-full max-w-full">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 pb-10 border-b border-[#22524A]">
           {/* Brand Info */}
           <div className="md:col-span-5 flex flex-col items-start">
             <Link href="/" className="flex items-center gap-3 mb-3.5 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#A3E5D4] rounded">
-              <Image
+              <img
                 src="/aspirev.png"
+                srcSet="/aspirev.png 1x, /aspirev@2x.png 2x"
                 alt="Aspirev Technologies"
-                width={130}
-                height={36}
-                className="h-8 w-auto object-contain transition-transform group-hover:scale-105"
+                width={120}
+                height={28}
+                className="h-6 sm:h-7 w-auto object-contain transition-transform group-hover:scale-105"
               />
             </Link>
 
@@ -40,17 +41,17 @@ export default function Footer() {
             </div>
 
             {/* Email & WhatsApp direct pills */}
-            <div className="flex flex-wrap items-center gap-2">
-              <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#102E27] border border-[#1E453C] hover:border-[#A3E5D4]/40 transition-colors">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2 w-full sm:w-auto">
+              <div className="flex items-center justify-between sm:justify-start gap-2 px-3.5 py-1.5 rounded-full bg-[#102E27] border border-[#1E453C] hover:border-[#A3E5D4]/40 transition-colors">
                 <a
                   href="mailto:hello.aspirev@gmail.com"
-                  className="font-mono text-xs text-[#A3E5D4] hover:underline focus:outline-none focus-visible:ring-1 focus-visible:ring-[#A3E5D4]"
+                  className="font-mono text-xs text-[#A3E5D4] hover:underline focus:outline-none focus-visible:ring-1 focus-visible:ring-[#A3E5D4] truncate"
                 >
                   hello.aspirev@gmail.com
                 </a>
                 <button
                   onClick={handleCopyEmail}
-                  className="p-1 rounded text-[#A7C2BC] hover:text-white transition-colors cursor-pointer focus:outline-none focus-visible:ring-1 focus-visible:ring-[#A3E5D4]"
+                  className="p-1 rounded text-[#A7C2BC] hover:text-white transition-colors cursor-pointer focus:outline-none focus-visible:ring-1 focus-visible:ring-[#A3E5D4] shrink-0"
                   title="Copy email to clipboard"
                   aria-label="Copy email"
                 >
@@ -66,9 +67,9 @@ export default function Footer() {
                 href="https://wa.me/94787844914?text=Hi%20Aspirev%2C%20I%20would%20like%20to%20discuss%20a%20website%20project"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#102E27] border border-[#1E453C] hover:border-emerald-400 font-mono text-xs text-emerald-400 hover:underline transition-colors"
+                className="inline-flex items-center justify-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#102E27] border border-[#1E453C] hover:border-emerald-400 font-mono text-xs text-emerald-400 hover:underline transition-colors truncate"
               >
-                <span>WhatsApp: +94 78 784 4914</span>
+                <span className="truncate">WhatsApp: +94 78 784 4914</span>
               </a>
             </div>
           </div>

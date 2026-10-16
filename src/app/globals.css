@@ -71,6 +71,9 @@ html {
   font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background-color: #FFFFFF;
   color: #10221E;
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
 }
 
 body {
@@ -78,6 +81,9 @@ body {
   background-color: #FFFFFF;
   color: #10221E;
   overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+  position: relative;
 }
 
 /* Custom elevation utility classes */

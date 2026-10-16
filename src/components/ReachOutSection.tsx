@@ -57,7 +57,7 @@ export default function ReachOutSection() {
   )}`;
 
   return (
-    <section id="contact-inline" className="py-16 md:py-24 bg-white border-b border-[#EFECE6]">
+    <section id="contact-inline" className="py-16 md:py-24 bg-white border-b border-[#EFECE6] overflow-hidden w-full max-w-full">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           {/* Left Column: Heading & Context */}
@@ -235,7 +235,7 @@ export default function ReachOutSection() {
                       placeholder="Email address"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="px-3.5 py-1.5 rounded-xl bg-white border border-[#DDD9CE] focus:outline-none focus:border-[#1A3E38] focus:ring-2 focus:ring-[#1A3E38]/15 font-body text-sm text-[#10221E] placeholder:text-[#9AA8A3] shadow-2xs min-w-[200px] sm:min-w-[240px] max-w-full"
+                      className="px-3.5 py-1.5 rounded-xl bg-white border border-[#DDD9CE] focus:outline-none focus:border-[#1A3E38] focus:ring-2 focus:ring-[#1A3E38]/15 font-body text-sm text-[#10221E] placeholder:text-[#9AA8A3] shadow-2xs w-full sm:w-auto min-w-0 sm:min-w-[240px] max-w-full"
                     />
                     <span>to get things started.</span>
                   </div>

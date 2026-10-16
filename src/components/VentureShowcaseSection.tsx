@@ -31,7 +31,7 @@ export default function VentureShowcaseSection() {
   ];
 
   return (
-    <section id="products" className="py-16 md:py-24 bg-white text-[#10221E] relative overflow-hidden border-b border-[#EFECE6]">
+    <section id="products" className="py-16 md:py-24 bg-white text-[#10221E] relative overflow-hidden border-b border-[#EFECE6] w-full max-w-full">
       {/* Subtle radial emerald backdrop glow on white */}
       <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[550px] h-[550px] bg-[#E7F3EF]/60 rounded-full blur-[130px] pointer-events-none" />
 
@@ -40,9 +40,9 @@ export default function VentureShowcaseSection() {
           {/* Left Column: Venture Narrative */}
           <div className="lg:col-span-6 flex flex-col items-start">
             {/* Stage Pill */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] text-[#1A3E38] text-[0.75rem] font-mono font-medium tracking-wide mb-4 shadow-2xs">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#1A3E38] animate-pulse" />
-              <span>[ Live Flagship Venture · www.aspirev.com ]</span>
+            <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] text-[#1A3E38] text-[0.6875rem] sm:text-[0.75rem] font-mono font-medium tracking-wide mb-4 shadow-2xs max-w-full">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#1A3E38] animate-pulse shrink-0" />
+              <span className="truncate sm:whitespace-normal">[ Live Flagship Venture · www.aspirev.com ]</span>
             </div>
 
             {/* Headline */}
@@ -72,7 +72,7 @@ export default function VentureShowcaseSection() {
               href="https://www.aspirev.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#1A3E38] hover:bg-[#13332E] text-white font-ui font-semibold text-sm shadow-[0_4px_16px_rgba(26,62,56,0.25)] hover:shadow-[0_8px_24px_rgba(26,62,56,0.35)] hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98] transition-all duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1A3E38]"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 sm:px-7 py-3.5 rounded-full bg-[#1A3E38] hover:bg-[#13332E] text-white font-ui font-semibold text-xs sm:text-sm shadow-[0_4px_16px_rgba(26,62,56,0.25)] hover:shadow-[0_8px_24px_rgba(26,62,56,0.35)] hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98] transition-all duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1A3E38]"
             >
               <span>Explore Live Platform (www.aspirev.com)</span>
               <ArrowUpRight className="w-4 h-4 stroke-[2.5]" />

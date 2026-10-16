@@ -5,7 +5,7 @@ import { Clock, ShieldCheck, UserCheck, Sparkles } from "lucide-react";
 
 export default function ContactHero() {
   return (
-    <section className="relative pt-24 pb-8 md:pt-32 md:pb-10 bg-white border-b border-[#E8E4D9]">
+    <section className="relative pt-24 pb-8 md:pt-32 md:pb-10 bg-white border-b border-[#E8E4D9] overflow-hidden w-full max-w-full">
       {/* Background Architectural Canvas Gradients */}
       <div className="absolute inset-0 pointer-events-none opacity-60">
         <div
@@ -18,9 +18,9 @@ export default function ContactHero() {
 
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Status Pill Badge */}
-        <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] mb-4">
-          <span className="w-2 h-2 rounded-full bg-[#10B981] animate-pulse" />
-          <span className="font-mono text-xs font-medium text-[#1A3E38]">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] mb-4 max-w-full">
+          <span className="w-2 h-2 rounded-full bg-[#10B981] animate-pulse shrink-0" />
+          <span className="font-mono text-xs font-medium text-[#1A3E38] truncate">
             [ Start a Project · Direct Founding Partner Contact ]
           </span>
         </div>

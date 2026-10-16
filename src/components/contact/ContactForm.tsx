@@ -100,7 +100,7 @@ export default function ContactForm() {
   )}`;
 
   return (
-    <div className="bg-white rounded-3xl border border-[#E5E0D5] p-6 sm:p-7 lg:p-8 shadow-xs">
+    <div className="bg-white rounded-3xl border border-[#E5E0D5] p-5 sm:p-7 lg:p-8 shadow-xs w-full max-w-full overflow-hidden">
       <div className="mb-6">
         <h2 className="font-display font-bold text-xl sm:text-2xl text-[#10221E] mb-1">
           Project Inquiry Details

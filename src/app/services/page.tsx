@@ -91,7 +91,7 @@ export default function ServicesPage() {
   const [inquiryModalOpen, setInquiryModalOpen] = useState(false);
 
   return (
-    <main className="min-h-screen bg-white text-[#10221E] flex flex-col font-sans">
+    <main className="min-h-screen bg-white text-[#10221E] flex flex-col font-sans overflow-x-hidden w-full max-w-full">
       {/* Navbar with active "Services" indicator */}
       <Navbar
         activePage="services"
@@ -102,7 +102,7 @@ export default function ServicesPage() {
       <ServicesHero onOpenInquiry={() => setInquiryModalOpen(true)} />
 
       {/* 4 In-Depth Capability Showcase Cards */}
-      <section className="py-8 md:py-10 bg-white">
+      <section className="py-8 md:py-10 bg-white overflow-hidden w-full max-w-full">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 space-y-5 sm:space-y-6">
           {servicesList.map((service) => (
             <ServiceDetailCard

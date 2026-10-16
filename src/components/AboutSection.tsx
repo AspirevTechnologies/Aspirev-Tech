@@ -6,7 +6,7 @@ import { ArrowRight, CheckCircle2, Award, Users2, ShieldCheck, Cpu } from "lucid
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-14 md:py-20 bg-white border-b border-[#E8E4D9]">
+    <section id="about" className="py-14 md:py-20 bg-white border-b border-[#E8E4D9] overflow-hidden w-full max-w-full">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Founder & Studio Engineering Frame */}
@@ -76,8 +76,8 @@ export default function AboutSection() {
 
           {/* Right Column: Studio Philosophy Narrative */}
           <div className="lg:col-span-7 flex flex-col items-start">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] text-[#1A3E38] text-xs font-mono font-medium tracking-wide mb-3">
-              <span>[ Founder-Led Engineering Studio · Mohamed Nazik ]</span>
+            <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] text-[#1A3E38] text-[0.6875rem] sm:text-xs font-mono font-medium tracking-wide mb-3 max-w-full">
+              <span className="truncate sm:whitespace-normal">[ Founder-Led Engineering Studio · Mohamed Nazik ]</span>
             </div>
 
             <h2 className="font-display font-bold text-2xl sm:text-3xl lg:text-4xl tracking-tight text-[#10221E] mb-4">

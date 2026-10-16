@@ -114,13 +114,13 @@ export default function FeaturedWorkSection() {
       : projects.filter((p) => p.category === activeFilter);
 
   return (
-    <section id="work" className="py-14 md:py-20 bg-white border-b border-[#E8E4D9]">
+    <section id="work" className="py-14 md:py-20 bg-white border-b border-[#E8E4D9] overflow-hidden w-full max-w-full">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-12 gap-5">
           <div className="max-w-[620px]">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] text-[#1A3E38] text-xs font-mono font-medium tracking-wide mb-3">
-              <span>[ Recent Projects · Live Flagship: www.aspirev.com ]</span>
+            <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] text-[#1A3E38] text-[0.6875rem] sm:text-xs font-mono font-medium tracking-wide mb-3 max-w-full">
+              <span className="truncate sm:whitespace-normal">[ Recent Projects · Flagship: www.aspirev.com ]</span>
             </div>
             <h2 className="font-display font-bold text-2xl sm:text-3xl lg:text-4xl tracking-tight text-[#10221E]">
               Good ideas deserve thoughtful execution.
@@ -165,23 +165,23 @@ export default function FeaturedWorkSection() {
                 {/* Scrollable Browser Window Mockup Frame */}
                 <div className="rounded-2xl border border-[#2D6B60] overflow-hidden bg-[#071714] shadow-xs mb-5">
                   {/* Browser Window Titlebar */}
-                  <div className="flex items-center justify-between px-4 py-2.5 bg-[#0A221D] border-b border-[#2D6B60]/40">
-                    <div className="flex items-center gap-1.5">
+                  <div className="flex items-center justify-between px-3 sm:px-4 py-2.5 bg-[#0A221D] border-b border-[#2D6B60]/40 gap-2">
+                    <div className="flex items-center gap-1.5 shrink-0">
                       <span className="w-2.5 h-2.5 rounded-full bg-rose-400" />
                       <span className="w-2.5 h-2.5 rounded-full bg-amber-400" />
                       <span className="w-2.5 h-2.5 rounded-full bg-emerald-400" />
                     </div>
-                    <div className="flex items-center gap-1 px-3 py-0.5 rounded-full bg-[#05110E] border border-[#2D6B60]/60 text-[0.625rem] font-mono text-[#D2EAE3] max-w-[220px] truncate shadow-2xs">
+                    <div className="flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#05110E] border border-[#2D6B60]/60 text-[0.625rem] font-mono text-[#D2EAE3] max-w-[130px] xs:max-w-[180px] sm:max-w-[220px] truncate shadow-2xs">
                       <Lock className="w-2.5 h-2.5 text-[#A3E5D4] shrink-0" />
-                      <span>{project.url}</span>
+                      <span className="truncate">{project.url}</span>
                     </div>
                     {project.isLive ? (
-                      <span className="text-[0.625rem] font-ui font-medium text-[#A3E5D4] flex items-center gap-1.5">
+                      <span className="text-[0.625rem] font-ui font-medium text-[#A3E5D4] flex items-center gap-1.5 shrink-0">
                         <span className="w-1.5 h-1.5 rounded-full bg-[#10B981] animate-pulse" />
                         Live Platform
                       </span>
                     ) : (
-                      <span className="text-[0.625rem] font-ui font-medium text-[#D2EAE3]/80 flex items-center gap-1.5">
+                      <span className="text-[0.625rem] font-ui font-medium text-[#D2EAE3]/80 flex items-center gap-1.5 shrink-0">
                         <span className="w-1.5 h-1.5 rounded-full bg-[#A3E5D4]/70" />
                         Recent Project
                       </span>
@@ -235,27 +235,27 @@ export default function FeaturedWorkSection() {
               </div>
 
               {/* Card Footer */}
-              <div className="flex items-center justify-between pt-4 border-t border-[#EFECE6]">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-4 border-t border-[#EFECE6]">
                 {project.isLive ? (
-                  <div className="flex items-center gap-3">
+                  <div className="flex flex-wrap items-center gap-2 sm:gap-3">
                     <a
                       href={project.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 font-ui text-xs sm:text-sm font-semibold text-[#1A3E38] hover:text-[#13332E] group/link transition-colors"
+                      className="inline-flex items-center gap-1.5 font-ui text-xs sm:text-sm font-semibold text-[#1A3E38] hover:text-[#13332E] bg-[#E7F3EF]/70 hover:bg-[#E7F3EF] px-2.5 py-1 rounded-full group/link transition-colors"
                     >
-                      <Sparkles className="w-3.5 h-3.5 text-[#2A7E68]" />
+                      <Sparkles className="w-3.5 h-3.5 text-[#2A7E68] shrink-0" />
                       <span>
                         {project.id === "aspirev-career"
-                          ? "Launch Live Flagship (www.aspirev.com)"
+                          ? "Launch Live Flagship"
                           : "Visit Live Website"}
                       </span>
-                      <ArrowUpRight className="w-3.5 h-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform text-[#2A7E68]" />
+                      <ArrowUpRight className="w-3.5 h-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform text-[#2A7E68] shrink-0" />
                     </a>
-                    <span className="text-[#DDD9CE]">·</span>
+                    <span className="text-[#DDD9CE] hidden xs:inline">·</span>
                     <Link
                       href="/work"
-                      className="font-ui text-xs text-[#526E65] hover:text-[#1A3E38] transition-colors"
+                      className="font-ui text-xs text-[#526E65] hover:text-[#1A3E38] px-2 py-0.5 rounded hover:bg-[#F2EFE9] transition-colors"
                     >
                       Case Study
                     </Link>
@@ -266,12 +266,14 @@ export default function FeaturedWorkSection() {
                     className="inline-flex items-center gap-1.5 font-ui text-xs sm:text-sm font-semibold text-[#1A3E38] hover:text-[#13332E] group/link transition-colors"
                   >
                     <span>Explore Case Study & Scope</span>
-                    <ArrowUpRight className="w-3.5 h-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
+                    <ArrowUpRight className="w-3.5 h-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform shrink-0" />
                   </Link>
                 )}
-                <span className="font-mono text-xs text-[#526E65] font-medium">
-                  {project.footerStatus}
-                </span>
+                <div className="flex items-center">
+                  <span className="font-mono text-[0.6875rem] sm:text-xs text-[#526E65] font-medium bg-[#FAF9F5] px-2.5 py-0.5 rounded-full border border-[#EFECE6]">
+                    {project.footerStatus}
+                  </span>
+                </div>
               </div>
             </div>
           ))}

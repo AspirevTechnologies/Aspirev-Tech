@@ -15,7 +15,7 @@ export default function AboutPage() {
   const [inquiryModalOpen, setInquiryModalOpen] = useState(false);
 
   return (
-    <main className="min-h-screen bg-white text-[#10221E] flex flex-col font-sans">
+    <main className="min-h-screen bg-white text-[#10221E] flex flex-col font-sans overflow-x-hidden w-full max-w-full">
       {/* Navbar with active "About" indicator */}
       <Navbar
         activePage="about"

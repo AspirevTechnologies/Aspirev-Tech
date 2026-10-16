@@ -119,7 +119,7 @@ export default function HeroSection({ onOpenInquiry }: HeroSectionProps) {
   ];
 
   return (
-    <section className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden bg-white">
+    <section className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden bg-white w-full max-w-full">
       {/* Subtle Warm Canvas Arc Gradients in Solvance Finance Style */}
       <div className="absolute inset-0 pointer-events-none opacity-60">
         <div
@@ -180,7 +180,7 @@ export default function HeroSection({ onOpenInquiry }: HeroSectionProps) {
 
           {/* Subtitle */}
           <p className="font-body text-base sm:text-lg md:text-xl leading-relaxed text-[#3E534D] max-w-[700px] mx-auto mb-9 font-normal">
-            We design and develop digital experiences, intelligent software, and technology products that solve real problems. From high-converting business landing pages to custom web applications - engineered with verifiable speed, security, and performance.
+            We design and develop digital experiences, intelligent software, and technology products that solve real problems. From high-converting business landing pages to custom web applications engineered with verifiable speed, security, and performance.
           </p>
 
           {/* Action Buttons: Forest Green Pill CTA + Warm Outline Pill + WhatsApp Pill */}
@@ -380,7 +380,7 @@ export default function HeroSection({ onOpenInquiry }: HeroSectionProps) {
         {/* ========================================================================= */}
         {/* SOLVANCE-STYLE BRACKETED VALUE CHIPS STRIP                                 */}
         {/* ========================================================================= */}
-        <div className="mt-14 pt-6 border-t border-[#E8E4D9] flex flex-wrap items-center justify-center md:justify-between gap-4 text-xs font-mono text-[#4A5D57]">
+        <div className="mt-14 pt-6 border-t border-[#E8E4D9] flex flex-wrap items-center justify-center md:justify-between gap-3 sm:gap-4 text-[0.6875rem] sm:text-xs font-mono text-[#4A5D57]">
           <div className="flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-[#1A3E38]" />
             <span className="font-medium text-[#10221E]">[ ✓ In-House Senior Architecture Guild ]</span>

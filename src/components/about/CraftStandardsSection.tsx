@@ -56,12 +56,12 @@ const principles: PrincipleItem[] = [
 
 export default function CraftStandardsSection() {
   return (
-    <section className="py-12 md:py-16 bg-white border-b border-[#E8E4D9]">
+    <section className="py-12 md:py-16 bg-white border-b border-[#E8E4D9] overflow-hidden w-full max-w-full">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-[720px] mb-8 md:mb-12">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] mb-3">
-            <span className="font-mono text-xs font-medium text-[#1A3E38]">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] mb-3 max-w-full">
+            <span className="font-mono text-xs font-medium text-[#1A3E38] truncate">
               [ Core Values & Craft Standards ]
             </span>
           </div>
@@ -101,7 +101,7 @@ export default function CraftStandardsSection() {
 
               {/* Card Footer Tag */}
               <div className="pt-3.5 border-t border-[#EFECE6]">
-                <span className="font-mono text-xs font-semibold text-[#1A3E38]">
+                <span className="font-mono text-xs font-semibold text-[#1A3E38] break-words">
                   {item.footerText}
                 </span>
               </div>

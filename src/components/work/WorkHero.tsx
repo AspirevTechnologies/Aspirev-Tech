@@ -5,7 +5,7 @@ import { CheckCircle2, Globe, ShieldCheck, Zap } from "lucide-react";
 
 export default function WorkHero() {
   return (
-    <section className="relative pt-24 pb-8 md:pt-32 md:pb-10 bg-white border-b border-[#E8E4D9]">
+    <section className="relative pt-24 pb-8 md:pt-32 md:pb-10 bg-white border-b border-[#E8E4D9] overflow-hidden w-full max-w-full">
       {/* Subtle Warm Canvas Arc Gradients in Solvance Theme */}
       <div className="absolute inset-0 pointer-events-none opacity-60">
         <div
@@ -18,9 +18,9 @@ export default function WorkHero() {
 
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Top Status Pill */}
-        <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] mb-4">
-          <span className="w-2 h-2 rounded-full bg-[#10B981] animate-pulse" />
-          <span className="font-mono text-xs font-medium text-[#1A3E38]">
+        <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] mb-4 max-w-full">
+          <span className="w-2 h-2 rounded-full bg-[#10B981] animate-pulse shrink-0" />
+          <span className="font-mono text-[0.6875rem] sm:text-xs font-medium text-[#1A3E38] truncate sm:whitespace-normal">
             [ Recent Projects · Flagship Live Venture: www.aspirev.com ]
           </span>
         </div>
@@ -36,22 +36,22 @@ export default function WorkHero() {
         </p>
 
         {/* Trust & Provenance Metrics Row */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mb-6">
-          <div className="flex items-center gap-2 p-2.5 rounded-2xl bg-[#FAF9F5] border border-[#E8E4D9]">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-2.5 mb-6">
+          <div className="flex items-center gap-2 p-2 sm:p-2.5 rounded-2xl bg-[#FAF9F5] border border-[#E8E4D9]">
             <Globe className="w-3.5 h-3.5 text-[#1A3E38] shrink-0" />
-            <span className="font-mono text-xs text-[#10221E]">Recent Client Projects</span>
+            <span className="font-mono text-[0.6875rem] sm:text-xs text-[#10221E] truncate">Recent Client Projects</span>
           </div>
-          <div className="flex items-center gap-2 p-2.5 rounded-2xl bg-[#FAF9F5] border border-[#E8E4D9]">
+          <div className="flex items-center gap-2 p-2 sm:p-2.5 rounded-2xl bg-[#FAF9F5] border border-[#E8E4D9]">
             <Zap className="w-3.5 h-3.5 text-[#1A3E38] shrink-0" />
-            <span className="font-mono text-xs text-[#10221E]">Sub-Second TTFB</span>
+            <span className="font-mono text-[0.6875rem] sm:text-xs text-[#10221E] truncate">Sub-Second TTFB</span>
           </div>
-          <div className="flex items-center gap-2 p-2.5 rounded-2xl bg-[#FAF9F5] border border-[#E8E4D9]">
+          <div className="flex items-center gap-2 p-2 sm:p-2.5 rounded-2xl bg-[#FAF9F5] border border-[#E8E4D9]">
             <CheckCircle2 className="w-3.5 h-3.5 text-[#1A3E38] shrink-0" />
-            <span className="font-mono text-xs text-[#10221E]">100% Production Code</span>
+            <span className="font-mono text-[0.6875rem] sm:text-xs text-[#10221E] truncate">100% Production Code</span>
           </div>
-          <div className="flex items-center gap-2 p-2.5 rounded-2xl bg-[#FAF9F5] border border-[#E8E4D9]">
+          <div className="flex items-center gap-2 p-2 sm:p-2.5 rounded-2xl bg-[#FAF9F5] border border-[#E8E4D9]">
             <ShieldCheck className="w-3.5 h-3.5 text-[#1A3E38] shrink-0" />
-            <span className="font-mono text-xs text-[#10221E]">Verified AI & Web Stacks</span>
+            <span className="font-mono text-[0.6875rem] sm:text-xs text-[#10221E] truncate">Verified AI & Stacks</span>
           </div>
         </div>
 

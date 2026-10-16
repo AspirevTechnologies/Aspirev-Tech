@@ -9,10 +9,10 @@ interface CtaBannerSectionProps {
 
 export default function CtaBannerSection({ onOpenInquiry }: CtaBannerSectionProps) {
   return (
-    <section id="contact" className="py-16 md:py-24 bg-white relative overflow-hidden">
+    <section id="contact" className="py-16 md:py-24 bg-white relative overflow-hidden w-full max-w-full">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Solvance Curved Hero Banner Container */}
-        <div className="relative rounded-[2.5rem] bg-gradient-to-br from-[#1A3E38] via-[#22564C] to-[#2D6B60] text-white p-8 sm:p-14 lg:p-16 border border-[#2D6B60] shadow-[0_20px_60px_rgba(26,62,56,0.35)] overflow-hidden text-center">
+        <div className="relative rounded-[2rem] sm:rounded-[2.5rem] bg-gradient-to-br from-[#1A3E38] via-[#22564C] to-[#2D6B60] text-white p-5 sm:p-14 lg:p-16 border border-[#2D6B60] shadow-[0_20px_60px_rgba(26,62,56,0.35)] overflow-hidden text-center">
           {/* Subtle Radial Glows inside Banner */}
           <div className="absolute -top-24 -left-24 w-96 h-96 bg-[#22564C] rounded-full blur-[100px] pointer-events-none" />
           <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-[#A3E5D4]/20 rounded-full blur-[100px] pointer-events-none" />
@@ -31,13 +31,13 @@ export default function CtaBannerSection({ onOpenInquiry }: CtaBannerSectionProp
 
           <div className="max-w-[720px] mx-auto flex flex-col items-center relative z-10">
             {/* Subtle Accent Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/15 border border-white/20 text-[#A3E5D4] text-[0.75rem] font-mono font-medium tracking-wide mb-5 shadow-2xs backdrop-blur-xs">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#A3E5D4] animate-pulse" />
-              <span>[ Open for Q4 & 2027 Partnerships ]</span>
+            <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 rounded-full bg-white/15 border border-white/20 text-[#A3E5D4] text-[0.6875rem] sm:text-[0.75rem] font-mono font-medium tracking-wide mb-5 shadow-2xs backdrop-blur-xs max-w-full">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#A3E5D4] animate-pulse shrink-0" />
+              <span className="truncate sm:whitespace-normal">[ Open for Q4 & 2027 Partnerships ]</span>
             </div>
 
             {/* Headline */}
-            <h2 className="font-display font-bold text-[2.25rem] sm:text-[2.75rem] lg:text-[3.25rem] leading-[1.12] tracking-[-0.03em] text-white mb-4">
+            <h2 className="font-display font-bold text-2xl sm:text-[2.75rem] lg:text-[3.25rem] leading-[1.15] tracking-[-0.03em] text-white mb-4">
               Have an idea worth building? Let&apos;s engineer it.
             </h2>
 
@@ -66,11 +66,11 @@ export default function CtaBannerSection({ onOpenInquiry }: CtaBannerSectionProp
             </div>
 
             {/* Micro Guarantees in Bracketed Solvance Style */}
-            <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs font-mono text-[#A3E5D4]/90">
+            <div className="grid grid-cols-2 sm:flex sm:flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs font-mono text-[#A3E5D4]/90 text-center">
               <span>[ ✓ Zero lock-in ]</span>
-              <span>[ ✓ 100% IP ownership ]</span>
-              <span>[ ✓ 48-Hour discovery sprint ]</span>
-              <span>[ ✓ Direct engineer contact ]</span>
+              <span>[ ✓ 100% IP rights ]</span>
+              <span>[ ✓ 48h discovery ]</span>
+              <span>[ ✓ Direct builder ]</span>
             </div>
           </div>
         </div>

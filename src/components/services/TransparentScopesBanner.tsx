@@ -11,14 +11,14 @@ export default function TransparentScopesBanner({
   onOpenInquiry,
 }: TransparentScopesBannerProps) {
   return (
-    <section className="py-12 md:py-16 bg-white border-t border-[#E8E4D9]">
+    <section className="py-12 md:py-16 bg-white border-t border-[#E8E4D9] overflow-hidden w-full max-w-full">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-[#FAF9F5] rounded-3xl border border-[#E5E0D5] p-6 sm:p-8 shadow-xs flex flex-col lg:flex-row lg:items-center justify-between gap-6">
           <div className="max-w-[760px]">
             {/* Pill */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] text-[#1A3E38] text-xs font-mono font-medium mb-3">
-              <ShieldCheck className="w-3.5 h-3.5 text-[#1A3E38]" />
-              <span>[ Transparent Scopes · Zero Hidden Retainers ]</span>
+            <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] text-[#1A3E38] text-[0.6875rem] sm:text-xs font-mono font-medium mb-3 max-w-full">
+              <ShieldCheck className="w-3.5 h-3.5 text-[#1A3E38] shrink-0" />
+              <span className="truncate sm:whitespace-normal">[ Transparent Scopes · Zero Hidden Retainers ]</span>
             </div>
 
             {/* Headline */}

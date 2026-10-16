@@ -11,13 +11,13 @@ export default function StudioPipelineSection({
   onOpenInquiry,
 }: StudioPipelineSectionProps) {
   return (
-    <section id="studio-pipeline" className="py-12 md:py-16 bg-[#FAF9F5] border-b border-[#E8E4D9]">
+    <section id="studio-pipeline" className="py-12 md:py-16 bg-[#FAF9F5] border-b border-[#E8E4D9] overflow-hidden w-full max-w-full">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header & Transparency Note */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-8 md:mb-12 gap-6">
           <div className="max-w-[680px]">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] mb-3">
-              <span className="font-mono text-xs font-medium text-[#1A3E38]">
+            <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] mb-3 max-w-full">
+              <span className="font-mono text-[0.6875rem] sm:text-xs font-medium text-[#1A3E38] truncate sm:whitespace-normal">
                 [ Studio Pipeline · R&D Explorations ]
               </span>
             </div>

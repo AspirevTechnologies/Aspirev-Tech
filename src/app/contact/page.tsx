@@ -12,7 +12,7 @@ export default function ContactPage() {
   const [inquiryModalOpen, setInquiryModalOpen] = useState(false);
 
   return (
-    <main className="min-h-screen bg-white text-[#10221E] flex flex-col font-sans">
+    <main className="min-h-screen bg-white text-[#10221E] flex flex-col font-sans overflow-x-hidden w-full max-w-full">
       {/* Dark Navbar with active indicator on Contact */}
       <Navbar
         activePage="contact"
@@ -23,7 +23,7 @@ export default function ContactPage() {
       <ContactHero />
 
       {/* Main Contact Section: Form (Left) & Sidebars (Right) */}
-      <section className="py-8 md:py-12 bg-white">
+      <section className="py-8 md:py-12 bg-white overflow-hidden w-full max-w-full">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
             {/* Left Column: Interactive Project Inquiry Form */}

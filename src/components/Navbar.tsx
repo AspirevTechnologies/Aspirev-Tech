@@ -44,16 +44,16 @@ export default function Navbar({ onOpenInquiry, activePage }: NavbarProps) {
         {/* Company Logo (aspirev.png) */}
         <Link
           href="/"
-          className="flex items-center gap-2 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#A3E5D4] rounded-full py-1 px-1"
+          className="flex items-center group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#A3E5D4] rounded-full py-1 px-1"
         >
           <div className="relative flex items-center">
-            <Image
+            <img
               src="/aspirev.png"
+              srcSet="/aspirev.png 1x, /aspirev@2x.png 2x"
               alt="Aspirev Product Studio"
-              width={130}
-              height={36}
-              className="h-7 sm:h-8 w-auto object-contain transition-transform group-hover:scale-105"
-              priority
+              width={105}
+              height={24}
+              className="h-5 sm:h-[22px] md:h-[23px] w-auto object-contain transition-transform group-hover:scale-105"
             />
           </div>
         </Link>

@@ -11,7 +11,7 @@ export default function PortfolioIntegrityBanner({
   onOpenInquiry,
 }: PortfolioIntegrityBannerProps) {
   return (
-    <section className="py-10 bg-white border-t border-[#E8E4D9]">
+    <section className="py-10 bg-white border-t border-[#E8E4D9] overflow-hidden w-full max-w-full">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-[#FAF9F5] rounded-3xl border border-[#E5E0D5] p-5 sm:p-6 shadow-xs flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div className="flex items-start gap-3.5">

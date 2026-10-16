@@ -78,12 +78,12 @@ export default function EngineeredCapabilitiesSection({
   onOpenInquiry,
 }: EngineeredCapabilitiesSectionProps) {
   return (
-    <section className="py-12 md:py-16 bg-[#FAF9F5] border-b border-[#E8E4D9]">
+    <section className="py-12 md:py-16 bg-[#FAF9F5] border-b border-[#E8E4D9] overflow-hidden w-full max-w-full">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-[700px] mb-8 md:mb-12">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] mb-3">
-            <span className="font-mono text-xs font-medium text-[#1A3E38]">
+          <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] mb-3 max-w-full">
+            <span className="font-mono text-[0.6875rem] sm:text-xs font-medium text-[#1A3E38] truncate sm:whitespace-normal">
               [ Platform Architecture · Core Systems ]
             </span>
           </div>

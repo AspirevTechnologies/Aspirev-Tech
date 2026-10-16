@@ -107,9 +107,9 @@ export default function PackagesSection({ onOpenInquiry }: PackagesSectionProps)
       <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-[760px] mx-auto mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] text-[#1A3E38] text-xs font-mono font-medium tracking-wide mb-3.5">
-            <Sparkles className="w-3.5 h-3.5 text-[#1A3E38]" />
-            <span>[ Website Development Packages · Your Vision, Our Code ]</span>
+          <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] text-[#1A3E38] text-[0.6875rem] sm:text-xs font-mono font-medium tracking-wide mb-3.5 max-w-full">
+            <Sparkles className="w-3.5 h-3.5 text-[#1A3E38] shrink-0" />
+            <span className="truncate sm:whitespace-normal">[ Website Packages · Your Vision, Our Code ]</span>
           </div>
 
           <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl tracking-tight text-[#10221E] mb-4">
@@ -260,11 +260,11 @@ export default function PackagesSection({ onOpenInquiry }: PackagesSectionProps)
         {/* ========================================================================= */}
         {/* FREE REVISIONS GUARANTEE BANNER (From Flyer)                             */}
         {/* ========================================================================= */}
-        <div className="rounded-3xl bg-gradient-to-r from-[#1A3E38] via-[#22564C] to-[#1A3E38] p-6 sm:p-8 text-white shadow-lg border border-[#2D6B60] mb-8">
+        <div className="rounded-3xl bg-gradient-to-r from-[#1A3E38] via-[#22564C] to-[#1A3E38] p-5 sm:p-8 text-white shadow-lg border border-[#2D6B60] mb-8">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-2xl bg-[#EBE6D8] text-[#1A3E38] flex items-center justify-center shrink-0 shadow-md">
-                <Award className="w-6 h-6 text-[#1A3E38]" />
+            <div className="flex items-start gap-3.5 sm:gap-4">
+              <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-[#EBE6D8] text-[#1A3E38] flex items-center justify-center shrink-0 shadow-md">
+                <Award className="w-5 h-5 sm:w-6 sm:h-6 text-[#1A3E38]" />
               </div>
               <div>
                 <div className="inline-flex items-center gap-2 px-3 py-0.5 rounded-full bg-[#13332E] text-[#A3E5D4] text-[0.6875rem] font-mono font-medium mb-1 border border-[#2D6B60]">
@@ -288,7 +288,7 @@ export default function PackagesSection({ onOpenInquiry }: PackagesSectionProps)
                 href={`https://wa.me/${whatsappNumber}?text=Hi%20Aspirev%2C%20I%20would%20like%20to%20discuss%20a%20website%20project%20for%20my%20business.`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-[#EBE6D8] hover:bg-[#F4F1EA] text-[#1A3E38] font-ui font-bold text-sm shadow-md transition-all hover:scale-105"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-[#EBE6D8] hover:bg-[#F4F1EA] text-[#1A3E38] font-ui font-bold text-sm shadow-md transition-all hover:scale-105 active:scale-95"
               >
                 <MessageCircle className="w-4 h-4 text-emerald-600 fill-emerald-600" />
                 <span>+94 78 784 4914</span>
@@ -298,7 +298,7 @@ export default function PackagesSection({ onOpenInquiry }: PackagesSectionProps)
         </div>
 
         {/* 4 Trust Value Pillars Strip (From Flyer Footer) */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 pt-2">
           <div className="flex items-center gap-3 p-4 rounded-2xl bg-[#FAF9F5] border border-[#E8E4D9]">
             <div className="w-9 h-9 rounded-full bg-[#E7F3EF] border border-[#CFE4D8] text-[#1A3E38] flex items-center justify-center shrink-0 shadow-2xs">
               <Zap className="w-4 h-4 text-[#1A3E38]" />

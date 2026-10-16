@@ -73,7 +73,7 @@ const packages: PackagePlan[] = [
     whatsappMessage: "Hi Aspirev! I want to explore the Premium Website Package with advanced features.",
     features: [
       "Up to 8 custom architected pages",
-      "Advanced custom UI/UX design & design system tokens",
+      "Advanced responsive layout architecture & design system tokens",
       "Interactive filtering galleries & multi-category service portals",
       "Custom micro-interactions & fluid animations",
       "Multi-step inquiry workflows & appointment booking logic",

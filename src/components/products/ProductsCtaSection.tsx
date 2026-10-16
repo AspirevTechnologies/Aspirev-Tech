@@ -33,7 +33,7 @@ export default function ProductsCtaSection({
 
             {/* Subtitle */}
             <p className="font-body text-[1rem] sm:text-[1.0625rem] leading-[1.65] text-[#D2EAE3] max-w-[540px] mb-8 font-normal">
-              Tell us what you&apos;re working on. Let&apos;s explore how we can bring it to life with high-precision engineering, pragmatic AI, and disciplined product design.
+              Tell us what you&apos;re working on. Let&apos;s explore how we can bring it to life with high-precision engineering, scalable software architecture, and pragmatic AI.
             </p>
 
             {/* Action Buttons: Solvance Cream Pill + Sage Outline */}

@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     "Digital Experiences",
     "Custom Software",
     "AI Solutions",
-    "UI/UX Design",
+    "Mobile Applications",
     "Venture Studio",
     "Aspirev",
   ],

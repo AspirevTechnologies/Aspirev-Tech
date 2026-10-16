@@ -181,7 +181,6 @@ export default function ProjectInquiryModal({
                   { id: "web-dev", label: "Web Application" },
                   { id: "software", label: "Custom Software" },
                   { id: "ai-solutions", label: "AI / ML Systems" },
-                  { id: "ui-ux", label: "UI/UX Design" },
                 ].map((item) => (
                   <button
                     key={item.id}

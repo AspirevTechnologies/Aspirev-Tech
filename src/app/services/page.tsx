@@ -33,26 +33,8 @@ const servicesList: ServiceDetailData[] = [
     mockupType: "web",
   },
   {
-    id: "product-design",
-    badgeNumber: "02 / PRODUCT INTERFACES",
-    title: "UI/UX & Mobile Interface Design",
-    problemText:
-      "Complex domain logic often results in cluttered interfaces, user confusion, low retention, and engineering rework due to unvalidated assumptions.",
-    deliverables: [
-      "User journey mapping & mobile touch wireframes",
-      "Design systems & UI component kits",
-      "UX audit & heuristic evaluation",
-      "Interactive clickable prototypes & user testing",
-      "Figma design handoff with token specs",
-    ],
-    suitableForText:
-      "SaaS founders, mobile app teams needing scalable interface architecture, and early-stage ventures preparing for MVP build.",
-    buttonText: "Discuss Product Design",
-    mockupType: "design",
-  },
-  {
     id: "custom-software",
-    badgeNumber: "03 / FULL STACK & MOBILE ENGINEERING",
+    badgeNumber: "02 / FULL STACK & MOBILE ENGINEERING",
     title: "Web Applications & Mobile Apps (iOS/Android)",
     problemText:
       "Off-the-shelf software rarely fits specialized operational workflows, leading to messy spreadsheets, data silos, and administrative bottlenecks.",
@@ -70,7 +52,7 @@ const servicesList: ServiceDetailData[] = [
   },
   {
     id: "ai-solutions",
-    badgeNumber: "04 / PRAGMATIC ML & AI AUTOMATION",
+    badgeNumber: "03 / PRAGMATIC ML & AI AUTOMATION",
     title: "ML-Based Systems & Practical AI",
     problemText:
       "Businesses want to leverage AI but get overwhelmed by hype, unclear ROI, and brittle tools that do not reliably integrate into daily routines.",

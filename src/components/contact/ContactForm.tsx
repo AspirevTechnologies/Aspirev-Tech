@@ -28,7 +28,6 @@ export default function ContactForm() {
     "Web Application",
     "Custom Software",
     "AI / ML Systems",
-    "UI/UX Design",
     "Other",
   ];
 

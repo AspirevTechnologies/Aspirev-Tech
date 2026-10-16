@@ -140,7 +140,7 @@ export default function ServiceDetailCard({
             </div>
           )}
 
-          {/* Mockup 2: UI/UX & Product Design (Clinical UI Architecture with dentalhub.webp) */}
+          {/* Mockup: Interface & Portal Architecture (Clinical Architecture with dentalhub.webp) */}
           {service.mockupType === "design" && (
             <div className="rounded-2xl border border-[#2D6B60] overflow-hidden bg-[#071714] shadow-md">
               <div className="flex items-center justify-between px-3 sm:px-3.5 py-2.5 bg-[#0A221D] border-b border-white/10 gap-2">

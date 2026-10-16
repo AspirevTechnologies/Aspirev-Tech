@@ -33,7 +33,7 @@ export default function FlagshipPlatformSection({
               </span>
             </div>
             <h2 className="font-display font-bold text-2xl sm:text-3xl lg:text-4xl tracking-tight text-[#10221E] mb-2.5">
-              Meet Aspirev — career intelligence, with more direction.
+              Meet Aspirev - career intelligence, with more direction.
             </h2>
             <p className="font-body text-base text-[#3E534D]">
               Career preparation has been fragmented. Aspirev brings important parts of the journey together, helping students and job seekers work on their resumes, explore career roadmaps, identify skill gaps, and organize applications.
@@ -77,22 +77,20 @@ export default function FlagshipPlatformSection({
               <div className="flex items-center gap-1 bg-[#0A221D] p-1 rounded-full border border-[#2D6B60] text-xs">
                 <button
                   onClick={() => setViewMode("preview")}
-                  className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-ui text-xs font-medium transition-colors cursor-pointer ${
-                    viewMode === "preview"
+                  className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-ui text-xs font-medium transition-colors cursor-pointer ${viewMode === "preview"
                       ? "bg-[#1A3E38] text-white font-semibold shadow-xs"
                       : "text-[#D2EAE3] hover:text-white"
-                  }`}
+                    }`}
                 >
                   <Globe className="w-3.5 h-3.5 text-[#A3E5D4]" />
                   <span>Live Website</span>
                 </button>
                 <button
                   onClick={() => setViewMode("console")}
-                  className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-ui text-xs font-medium transition-colors cursor-pointer ${
-                    viewMode === "console"
+                  className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-ui text-xs font-medium transition-colors cursor-pointer ${viewMode === "console"
                       ? "bg-[#1A3E38] text-white font-semibold shadow-xs"
                       : "text-[#D2EAE3] hover:text-white"
-                  }`}
+                    }`}
                 >
                   <Activity className="w-3.5 h-3.5 text-[#A3E5D4]" />
                   <span>Radar Console</span>

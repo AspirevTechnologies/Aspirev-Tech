@@ -6,7 +6,6 @@ import {
   ArrowRight,
   ArrowUpRight,
   Globe,
-  Layout,
   Terminal,
   Sparkles,
   Zap,
@@ -29,11 +28,6 @@ export default function ServicesHero({ onOpenInquiry }: ServicesHeroProps) {
       id: "custom-software",
       label: "Mobile Apps (iOS/Android)",
       icon: <Terminal className="w-3.5 h-3.5 text-[#1A3E38]" />,
-    },
-    {
-      id: "product-design",
-      label: "UI/UX & Mobile Design",
-      icon: <Layout className="w-3.5 h-3.5 text-[#1A3E38]" />,
     },
     {
       id: "ai-solutions",

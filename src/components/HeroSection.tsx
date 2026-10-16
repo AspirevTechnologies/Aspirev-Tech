@@ -75,44 +75,38 @@ export default function HeroSection({ onOpenInquiry }: HeroSectionProps) {
 
   const floatingAvatars = [
     {
-      name: "Julian Rivera",
-      role: "Lead Systems Architect",
-      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&crop=faces&w=256&h=256&q=85",
+      // South Asian tech professional man
+      image: "/avatars/avatar1.jpg",
       posClass: "-left-16 xl:-left-24 top-6",
       animClass: "animate-bounce-slow",
     },
     {
-      name: "Sophia Lin",
-      role: "Principal Architect",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&crop=faces&w=256&h=256&q=85",
+      // South Asian tech lead woman
+      image: "/avatars/avatar2.jpg",
       posClass: "-left-28 xl:-left-36 top-36",
       animClass: "animate-float-delayed",
     },
     {
-      name: "Marcus Chen",
-      role: "Senior Systems Engineer",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&crop=faces&w=256&h=256&q=85",
+      // South Asian software engineer man
+      image: "/avatars/avatar3.jpg",
       posClass: "-left-14 xl:-left-20 bottom-8",
       animClass: "animate-float-reverse",
     },
     {
-      name: "Aria Patel",
-      role: "AI & Workflow Specialist",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&crop=faces&w=256&h=256&q=85",
+      // South Asian product designer woman
+      image: "/avatars/avatar4.jpg",
       posClass: "-right-16 xl:-right-24 top-6",
       animClass: "animate-bounce-slow",
     },
     {
-      name: "Tariq Al-Mansoor",
-      role: "Technical Strategist",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&crop=faces&w=256&h=256&q=85",
+      // South Asian tech startup founder man
+      image: "/avatars/avatar5.jpg",
       posClass: "-right-28 xl:-right-36 top-36",
       animClass: "animate-float-delayed",
     },
     {
-      name: "Devon Vance",
-      role: "Cloud Infrastructure Lead",
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&crop=faces&w=256&h=256&q=85",
+      // South Asian digital creator woman
+      image: "/avatars/avatar6.jpg",
       posClass: "-right-14 xl:-right-20 bottom-8",
       animClass: "animate-float-reverse",
     },
@@ -141,25 +135,18 @@ export default function HeroSection({ onOpenInquiry }: HeroSectionProps) {
               key={idx}
               className={`hidden lg:flex absolute ${avatar.posClass} items-center justify-center ${avatar.animClass} z-20`}
             >
-              <div className="relative group/avatar cursor-pointer">
-                {/* Clean, pure circular avatar portrait without thick background boundary */}
+              <div className="relative">
+                {/* Clean circular avatar portrait */}
                 <div className="w-12 h-12 lg:w-14 lg:h-14 rounded-full overflow-hidden border-2 border-white shadow-[0_8px_20px_rgba(0,0,0,0.12)] ring-1 ring-[#1A3E38]/10 hover:scale-110 transition-transform duration-300 bg-[#FAF9F5]">
                   <img
                     src={avatar.image}
-                    alt={avatar.name}
+                    alt="Collaborator"
                     className="w-full h-full object-cover object-center"
                     loading="eager"
                   />
                 </div>
-                {/* Verified active guild member beacon */}
-                <span className="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-[#10B981] border-2 border-white shadow-xs" />
-
-                {/* Tooltip on hover */}
-                <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover/avatar:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap z-30">
-                  <span className="px-2.5 py-1 rounded-full bg-[#10221E] text-white text-[0.625rem] font-mono shadow-md border border-white/10">
-                    {avatar.name} · {avatar.role}
-                  </span>
-                </div>
+                {/* Active beacon */}
+                <span className="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-[#10B981] border-2 border-white shadow-xs animate-pulse" />
               </div>
             </div>
           ))}

@@ -124,10 +124,11 @@ export default function FlagshipPlatformSection({
               {/* Scrollable Landing Page Viewport Container */}
               <div className="relative h-80 sm:h-96 lg:h-[480px] overflow-y-auto overflow-x-hidden bg-[#05110E] scrollbar-thin scrollbar-thumb-[#1A3E38] hover:scrollbar-thumb-[#A3E5D4] select-none">
                 <img
-                  src="/aspirevown.png"
+                  src="/aspirevown.webp"
                   alt="Aspirev Live Platform Website Architecture"
                   className="w-full h-auto block"
                   loading="lazy"
+                  decoding="async"
                 />
 
                 {/* Scroll prompt overlay */}

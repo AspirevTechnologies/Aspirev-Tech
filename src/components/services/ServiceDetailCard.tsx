@@ -101,7 +101,7 @@ export default function ServiceDetailCard({
 
         {/* Right Side: High-Precision Mockup Viewport */}
         <div className="lg:col-span-6 w-full">
-          {/* Mockup 1: Web Design & Development (Real Live Browser Window with Airi.png) */}
+          {/* Mockup 1: Web Design & Development (Real Live Browser Window with Airi.webp) */}
           {service.mockupType === "web" && (
             <div className="rounded-2xl border border-[#2D6B60] overflow-hidden bg-[#071714] shadow-md">
               <div className="flex items-center justify-between px-3.5 py-2.5 bg-[#0A221D] border-b border-white/10">
@@ -110,7 +110,7 @@ export default function ServiceDetailCard({
                   <span className="w-2.5 h-2.5 rounded-full bg-amber-400" />
                   <span className="w-2.5 h-2.5 rounded-full bg-emerald-400" />
                   <span className="ml-2 font-mono text-[0.625rem] text-[#D2EAE3] truncate max-w-[160px]">
-                    https://airibanquet.com
+                    airi-bunquet-hall.vercel.app
                   </span>
                 </div>
                 {/* 100/100 Lighthouse Metric Pill */}
@@ -120,13 +120,14 @@ export default function ServiceDetailCard({
                 </span>
               </div>
 
-              {/* Scrollable Viewport with Airi.png */}
+              {/* Scrollable Viewport with Airi.webp */}
               <div className="relative h-64 sm:h-72 overflow-y-auto overflow-x-hidden bg-[#05110E] scrollbar-thin scrollbar-thumb-[#1A3E38] hover:scrollbar-thumb-[#A3E5D4] select-none">
                 <img
-                  src="/Airi.png"
+                  src="/Airi.webp"
                   alt="Airi Banquet Hall Architecture Preview"
                   className="w-full h-auto block"
                   loading="lazy"
+                  decoding="async"
                 />
                 <div className="sticky bottom-2 left-0 right-0 flex justify-center pointer-events-none">
                   <span className="px-3 py-1 rounded-full bg-[#0A221D]/90 backdrop-blur-sm text-[#D2EAE3] text-[0.625rem] font-ui font-medium shadow-md border border-[#A3E5D4]/30">
@@ -137,7 +138,7 @@ export default function ServiceDetailCard({
             </div>
           )}
 
-          {/* Mockup 2: UI/UX & Product Design (Clinical UI Architecture with dentalhub.png) */}
+          {/* Mockup 2: UI/UX & Product Design (Clinical UI Architecture with dentalhub.webp) */}
           {service.mockupType === "design" && (
             <div className="rounded-2xl border border-[#2D6B60] overflow-hidden bg-[#071714] shadow-md">
               <div className="flex items-center justify-between px-3.5 py-2.5 bg-[#0A221D] border-b border-white/10">
@@ -146,7 +147,7 @@ export default function ServiceDetailCard({
                   <span className="w-2.5 h-2.5 rounded-full bg-amber-400" />
                   <span className="w-2.5 h-2.5 rounded-full bg-emerald-400" />
                   <span className="ml-2 font-mono text-[0.625rem] text-[#D2EAE3] truncate max-w-[170px]">
-                    https://dentalhub.lk
+                    the-dentalhub.vercel.app
                   </span>
                 </div>
                 <span className="text-[0.625rem] font-mono font-semibold px-2.5 py-0.5 rounded-full bg-[#1A3E38] text-[#A3E5D4] border border-[#2D6B60] shadow-2xs flex items-center gap-1">
@@ -155,13 +156,14 @@ export default function ServiceDetailCard({
                 </span>
               </div>
 
-              {/* Scrollable Viewport with dentalhub.png */}
+              {/* Scrollable Viewport with dentalhub.webp */}
               <div className="relative h-64 sm:h-72 overflow-y-auto overflow-x-hidden bg-[#05110E] scrollbar-thin scrollbar-thumb-[#1A3E38] hover:scrollbar-thumb-[#A3E5D4] select-none">
                 <img
-                  src="/dentalhub.png"
+                  src="/dentalhub.webp"
                   alt="Dental Hub Clinical Design System Preview"
                   className="w-full h-auto block"
                   loading="lazy"
+                  decoding="async"
                 />
                 <div className="sticky bottom-2 left-0 right-0 flex justify-center pointer-events-none">
                   <span className="px-3 py-1 rounded-full bg-[#0A221D]/90 backdrop-blur-sm text-[#D2EAE3] text-[0.625rem] font-ui font-medium shadow-md border border-[#A3E5D4]/30">
@@ -172,7 +174,7 @@ export default function ServiceDetailCard({
             </div>
           )}
 
-          {/* Mockup 3: Web Applications & Custom Software (Fleet Dispatch Suite with valetxpress.png) */}
+          {/* Mockup 3: Web Applications & Custom Software (Fleet Dispatch Suite with valetxpress.webp) */}
           {service.mockupType === "software" && (
             <div className="rounded-2xl border border-[#2D6B60] overflow-hidden bg-[#071714] shadow-md">
               <div className="flex items-center justify-between px-3.5 py-2.5 bg-[#0A221D] border-b border-white/10">
@@ -181,7 +183,7 @@ export default function ServiceDetailCard({
                   <span className="w-2.5 h-2.5 rounded-full bg-amber-400" />
                   <span className="w-2.5 h-2.5 rounded-full bg-emerald-400" />
                   <span className="ml-2 font-mono text-[0.625rem] text-[#D2EAE3] truncate max-w-[170px]">
-                    https://valetxpress.lk
+                    preview.internal/valetxpress
                   </span>
                 </div>
                 <span className="text-[0.625rem] font-mono font-semibold px-2.5 py-0.5 rounded-full bg-[#1A3E38] text-[#A3E5D4] border border-[#2D6B60] shadow-2xs flex items-center gap-1">
@@ -190,13 +192,14 @@ export default function ServiceDetailCard({
                 </span>
               </div>
 
-              {/* Scrollable Viewport with valetxpress.png */}
+              {/* Scrollable Viewport with valetxpress.webp */}
               <div className="relative h-64 sm:h-72 overflow-y-auto overflow-x-hidden bg-[#05110E] scrollbar-thin scrollbar-thumb-[#1A3E38] hover:scrollbar-thumb-[#A3E5D4] select-none">
                 <img
-                  src="/valetxpress.png"
+                  src="/valetxpress.webp"
                   alt="ValetXpress Fleet Mobility Dispatch Application"
                   className="w-full h-auto block"
                   loading="lazy"
+                  decoding="async"
                 />
                 <div className="sticky bottom-2 left-0 right-0 flex justify-center pointer-events-none">
                   <span className="px-3 py-1 rounded-full bg-[#0A221D]/90 backdrop-blur-sm text-[#D2EAE3] text-[0.625rem] font-ui font-medium shadow-md border border-[#A3E5D4]/30">
@@ -207,7 +210,7 @@ export default function ServiceDetailCard({
             </div>
           )}
 
-          {/* Mockup 4: AI & Intelligent Solutions (Vector Engine Platform with aspirevown.png) */}
+          {/* Mockup 4: AI & Intelligent Solutions (Vector Engine Platform with aspirevown.webp) */}
           {service.mockupType === "ai" && (
             <div className="rounded-2xl border border-[#2D6B60] overflow-hidden bg-[#071714] shadow-md">
               <div className="flex items-center justify-between px-3.5 py-2.5 bg-[#0A221D] border-b border-white/10">
@@ -216,7 +219,7 @@ export default function ServiceDetailCard({
                   <span className="w-2.5 h-2.5 rounded-full bg-amber-400" />
                   <span className="w-2.5 h-2.5 rounded-full bg-emerald-400" />
                   <span className="ml-2 font-mono text-[0.625rem] text-[#D2EAE3] truncate max-w-[170px]">
-                    https://aspirev.com
+                    https://www.aspirev.com
                   </span>
                 </div>
                 <span className="text-[0.625rem] font-mono font-semibold px-2.5 py-0.5 rounded-full bg-[#1A3E38] text-[#A3E5D4] border border-[#2D6B60] shadow-2xs flex items-center gap-1">
@@ -225,13 +228,14 @@ export default function ServiceDetailCard({
                 </span>
               </div>
 
-              {/* Scrollable Viewport with aspirevown.png */}
+              {/* Scrollable Viewport with aspirevown.webp */}
               <div className="relative h-64 sm:h-72 overflow-y-auto overflow-x-hidden bg-[#05110E] scrollbar-thin scrollbar-thumb-[#1A3E38] hover:scrollbar-thumb-[#A3E5D4] select-none">
                 <img
-                  src="/aspirevown.png"
+                  src="/aspirevown.webp"
                   alt="Aspirev AI Career Intelligence Platform"
                   className="w-full h-auto block"
                   loading="lazy"
+                  decoding="async"
                 />
                 <div className="sticky bottom-2 left-0 right-0 flex justify-center pointer-events-none">
                   <span className="px-3 py-1 rounded-full bg-[#0A221D]/90 backdrop-blur-sm text-[#D2EAE3] text-[0.625rem] font-ui font-medium shadow-md border border-[#A3E5D4]/30">

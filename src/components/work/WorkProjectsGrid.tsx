@@ -27,7 +27,7 @@ const projects: ProjectItem[] = [
     mockupBadge: "LIVE FLAGSHIP PLATFORM",
     mockupHeader: "www.aspirev.com // Career Intelligence OS",
     url: "https://www.aspirev.com",
-    previewImage: "/aspirevown.png",
+    previewImage: "/aspirevown.webp",
     client: "Aspirev Technologies · Live Platform",
     tags: ["Live Platform", "BERT & LLM Models", "Career Roadmaps", "ATS Resume Engine", "In-Build Portfolio"],
     title: "Aspirev — AI Career Intelligence Platform",
@@ -45,7 +45,7 @@ const projects: ProjectItem[] = [
     mockupBadge: "LIVE DEPLOYMENT · AI VISION",
     mockupHeader: "hotel360-mu.vercel.app // Wedding Sanctuary OS",
     url: "https://hotel360-mu.vercel.app/",
-    previewImage: "/EASCCA.png",
+    previewImage: "/EASCCA.webp",
     client: "EASCCA Convention Centre",
     tags: ["Live Deployment", "Azure Computer Vision", "Sentiment Analysis", "A+ Performance"],
     title: "EASCCA Grand Convention Centre & Wedding OS",
@@ -63,7 +63,7 @@ const projects: ProjectItem[] = [
     mockupBadge: "LIVE CLIENT DEPLOYMENT",
     mockupHeader: "airi-bunquet-hall.vercel.app // Galle Venue",
     url: "https://airi-bunquet-hall-d02pzwfkz-naziks-projects-8a3b46ec.vercel.app/",
-    previewImage: "/Airi.png",
+    previewImage: "/Airi.webp",
     client: "Airi Banquet Hall, Galle",
     tags: ["Live Deployment", "Luxury Hospitality", "Web Platform"],
     title: "Airi Banquet Hall & Events — Galle",
@@ -81,7 +81,7 @@ const projects: ProjectItem[] = [
     mockupBadge: "LIVE CLIENT DEPLOYMENT",
     mockupHeader: "the-dentalhub.vercel.app // Clinical System",
     url: "https://the-dentalhub-dkq4k4n82-naziks-projects-8a3b46ec.vercel.app/",
-    previewImage: "/dentalhub.png",
+    previewImage: "/dentalhub.webp",
     client: "Dental Hub Healthcare",
     tags: ["Live Deployment", "Healthcare Portal", "Clinical Management"],
     title: "Dental Hub Multi-Speciality Clinic",
@@ -99,7 +99,7 @@ const projects: ProjectItem[] = [
     mockupBadge: "LIVE CLIENT DEPLOYMENT",
     mockupHeader: "dr-malinda-dental.vercel.app // Dental Surgery",
     url: "https://dr-malinda-dental.vercel.app/",
-    previewImage: "/malinda.png",
+    previewImage: "/malinda.webp",
     client: "Dr. Malinda Ekanayake Practice",
     tags: ["Live Deployment", "Surgical Practice", "Patient Intake"],
     title: "Dr. Malinda Ekanayake Dental Surgery",
@@ -117,7 +117,7 @@ const projects: ProjectItem[] = [
     mockupBadge: "RECENT CLIENT PROJECT",
     mockupHeader: "recent-project // valetxpress-mobility",
     url: "preview.internal/valetxpress-mobility",
-    previewImage: "/valetxpress.png",
+    previewImage: "/valetxpress.webp",
     client: "ValetXpress Mobility",
     tags: ["Recent Project", "Fleet Management", "Mobility Logistics"],
     title: "ValetXpress Concierge & Fleet Mobility",
@@ -234,6 +234,7 @@ export default function WorkProjectsGrid({ onOpenInquiry }: WorkProjectsGridProp
                       alt={`${project.title} Full Page Architecture Preview`}
                       className="w-full h-auto block"
                       loading="lazy"
+                      decoding="async"
                     />
 
                     {/* Scroll prompt overlay */}

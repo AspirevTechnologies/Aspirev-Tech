@@ -29,7 +29,7 @@ const projects: ProjectItem[] = [
     badge: "Live Flagship Platform",
     footerStatus: "Live Platform · www.aspirev.com",
     url: "https://www.aspirev.com",
-    previewImage: "/aspirevown.png",
+    previewImage: "/aspirevown.webp",
     category: "venture",
     isLive: true,
   },
@@ -43,7 +43,7 @@ const projects: ProjectItem[] = [
     badge: "AI Vision · Live App",
     footerStatus: "Live Client Deployment · A+ Audited",
     url: "https://hotel360-mu.vercel.app/",
-    previewImage: "/EASCCA.png",
+    previewImage: "/EASCCA.webp",
     category: "hospitality",
     isLive: true,
   },
@@ -57,7 +57,7 @@ const projects: ProjectItem[] = [
     badge: "Live Client Platform",
     footerStatus: "Live Website Production",
     url: "https://airi-bunquet-hall-d02pzwfkz-naziks-projects-8a3b46ec.vercel.app/",
-    previewImage: "/Airi.png",
+    previewImage: "/Airi.webp",
     category: "hospitality",
     isLive: true,
   },
@@ -71,7 +71,7 @@ const projects: ProjectItem[] = [
     badge: "Live Clinical Practice",
     footerStatus: "Live Clinic System",
     url: "https://the-dentalhub-dkq4k4n82-naziks-projects-8a3b46ec.vercel.app/",
-    previewImage: "/dentalhub.png",
+    previewImage: "/dentalhub.webp",
     category: "healthcare",
     isLive: true,
   },
@@ -85,7 +85,7 @@ const projects: ProjectItem[] = [
     badge: "Live Surgical Practice",
     footerStatus: "Live Medical Platform",
     url: "https://dr-malinda-dental.vercel.app/",
-    previewImage: "/malinda.png",
+    previewImage: "/malinda.webp",
     category: "healthcare",
     isLive: true,
   },
@@ -99,7 +99,7 @@ const projects: ProjectItem[] = [
     badge: "Recent Client Project",
     footerStatus: "Fleet Dispatch Architecture",
     url: "preview.internal/valetxpress-mobility",
-    previewImage: "/valetxpress.png",
+    previewImage: "/valetxpress.webp",
     category: "operations",
     isLive: false,
   },
@@ -196,6 +196,7 @@ export default function FeaturedWorkSection() {
                       alt={`${project.title} Full Website Capture`}
                       className="w-full h-auto block"
                       loading="lazy"
+                      decoding="async"
                     />
 
                     {/* Scroll prompt overlay */}

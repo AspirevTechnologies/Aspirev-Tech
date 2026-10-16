@@ -23,6 +23,7 @@ export default function ContactForm() {
   });
 
   const projectTypes = [
+    "Landing Page",
     "Website",
     "Mobile App",
     "Web Application",

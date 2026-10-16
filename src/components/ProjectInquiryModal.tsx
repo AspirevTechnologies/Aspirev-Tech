@@ -176,6 +176,7 @@ export default function ProjectInquiryModal({
               </label>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                 {[
+                  { id: "landing-page", label: "Landing Page" },
                   { id: "website", label: "Website" },
                   { id: "mobile-apps", label: "Mobile App" },
                   { id: "web-dev", label: "Web Application" },

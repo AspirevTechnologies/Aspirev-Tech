@@ -76,37 +76,37 @@ export default function HeroSection({ onOpenInquiry }: HeroSectionProps) {
   const floatingAvatars = [
     {
       // South Asian tech professional man
-      image: "/avatars/avatar1.jpg",
+      image: "/avatars/avatar1.webp",
       posClass: "-left-16 xl:-left-24 top-6",
       animClass: "animate-bounce-slow",
     },
     {
       // South Asian tech lead woman
-      image: "/avatars/avatar2.jpg",
+      image: "/avatars/avatar2.webp",
       posClass: "-left-28 xl:-left-36 top-36",
       animClass: "animate-float-delayed",
     },
     {
       // South Asian software engineer man
-      image: "/avatars/avatar3.jpg",
+      image: "/avatars/avatar3.webp",
       posClass: "-left-14 xl:-left-20 bottom-8",
       animClass: "animate-float-reverse",
     },
     {
       // South Asian product designer woman
-      image: "/avatars/avatar4.jpg",
+      image: "/avatars/avatar4.webp",
       posClass: "-right-16 xl:-right-24 top-6",
       animClass: "animate-bounce-slow",
     },
     {
       // South Asian tech startup founder man
-      image: "/avatars/avatar5.jpg",
+      image: "/avatars/avatar5.webp",
       posClass: "-right-28 xl:-right-36 top-36",
       animClass: "animate-float-delayed",
     },
     {
       // South Asian digital creator woman
-      image: "/avatars/avatar6.jpg",
+      image: "/avatars/avatar6.webp",
       posClass: "-right-14 xl:-right-20 bottom-8",
       animClass: "animate-float-reverse",
     },

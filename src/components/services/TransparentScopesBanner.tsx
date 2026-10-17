@@ -28,7 +28,7 @@ export default function TransparentScopesBanner({
 
             {/* Paragraph */}
             <p className="font-body text-sm leading-relaxed text-[#4A5D57]">
-              We tailor every engagement to specific project requirements rather than enforcing rigid generic packages. We offer fixed-scope sprints for well-defined deliverables and dedicated sprint blocks for evolving products. Request a project discussion to receive a detailed scope breakdown.
+              We tailor every engagement to specific project requirements rather than enforcing rigid generic packages. All custom system builds and web platforms follow an honest 40 / 60 milestone schedule (40% initial commencement advance, 60% upon completed staging preview and handover). Request a project discussion to receive a detailed scope breakdown.
             </p>
           </div>
 

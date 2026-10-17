@@ -116,9 +116,16 @@ export default function PackagesSection({ onOpenInquiry }: PackagesSectionProps)
             Choose the perfect plan for your business.
           </h2>
 
-          <p className="font-body text-sm sm:text-base leading-relaxed text-[#3E534D]">
+          <p className="font-body text-sm sm:text-base leading-relaxed text-[#3E534D] mb-4">
             From simple, high-converting business landing pages to powerful web applications. We build modern, fast, and scalable solutions that help you grow online - tailored for both local Sri Lankan enterprises and international clients.
           </p>
+
+          <div className="flex flex-wrap items-center justify-center gap-2 text-xs font-mono text-[#1A3E38]">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FAF9F5] border border-[#DDD9CE] shadow-2xs">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#10B981]" />
+              <span>Transparent 40% Kickoff Advance · 60% On Staging Demo Handover</span>
+            </span>
+          </div>
         </div>
 
         {/* 3-Column Pricing / Package Grid */}

@@ -105,6 +105,13 @@ export default function TermsPage() {
                 </div>
               </div>
 
+              <div className="p-3.5 rounded-xl border border-[#CFE4D8] bg-[#FAF9F5] text-xs">
+                <span className="font-semibold text-[#10221E] block mb-1">Standard 40 / 60 Milestone Payment Structure:</span>
+                <p className="text-[#3E534D] leading-relaxed">
+                  Projects operate on a transparent two-stage milestone agreement: <strong>40% project commencement advance</strong> upon project lock and discovery kickoff, and the remaining <strong>60% final balance</strong> upon completed staging preview, verified live demo, and before final production handover and IP assignment.
+                </p>
+              </div>
+
               <div className="p-3.5 rounded-xl border border-[#E5E0D5] bg-[#FAF9F5] text-xs">
                 <span className="font-semibold text-[#10221E] block mb-0.5">Estimated Turnaround Windows:</span>
                 Landing Pages (5–7 working days), Business Websites (7–12 working days), Premium Platforms (12–21 working days). Timelines commence upon receipt of initial deposit and required client assets.

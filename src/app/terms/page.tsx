@@ -107,7 +107,7 @@ export default function TermsPage() {
 
               <div className="p-3.5 rounded-xl border border-[#E5E0D5] bg-[#FAF9F5] text-xs">
                 <span className="font-semibold text-[#10221E] block mb-0.5">Estimated Turnaround Windows:</span>
-                Landing Pages (5–7 working days), Business Websites (7–12 working days), Premium Platforms (10–18 working days). Timelines commence upon receipt of initial deposit and required client assets.
+                Landing Pages (5–7 working days), Business Websites (7–12 working days), Premium Platforms (12–21 working days). Timelines commence upon receipt of initial deposit and required client assets.
               </div>
             </div>
           </div>

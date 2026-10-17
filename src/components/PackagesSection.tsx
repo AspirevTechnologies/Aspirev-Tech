@@ -66,7 +66,7 @@ const packages: PackagePlan[] = [
     name: "Premium Website",
     tagline: "More Features. Greater Impact.",
     badge: "Enterprise Grade",
-    deliveryDays: "10 – 18 Working Days",
+    deliveryDays: "12 – 21 Working Days",
     description:
       "A tailor-engineered web platform with custom functionality, richer interactions, and bespoke architecture engineered for market leadership.",
     idealFor: "High-growth startups, luxury brands, complex service businesses & international clients",
